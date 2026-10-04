@@ -1,0 +1,78 @@
+<Window
+	x:Class="PPTService.QrWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Style="{DynamicResource Style.Window}"
+	WindowStartupLocation="Manual"
+	Title="QrWindow" xmlns:pptservice="clr-namespace:PPTService">
+	<FrameworkElement.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary
+					Source="pack://application:,,,/PPTService;component/Style_/WindowStyle.xaml" />
+			</ResourceDictionary.MergedDictionaries>
+			<Storyboard
+				x:Key="StoryBoard.ShowQrImage">
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="QrBorder">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.3"
+						Value="1">
+						<EasingDoubleKeyFrame.EasingFunction>
+							<CircleEase
+								EasingMode="EaseOut" />
+						</EasingDoubleKeyFrame.EasingFunction>
+					</EasingDoubleKeyFrame>
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="QrBorder">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.3"
+						Value="1">
+						<EasingDoubleKeyFrame.EasingFunction>
+							<CircleEase
+								EasingMode="EaseOut" />
+						</EasingDoubleKeyFrame.EasingFunction>
+					</EasingDoubleKeyFrame>
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+		</ResourceDictionary>
+	</FrameworkElement.Resources>
+	<Grid
+		Name="QrGrid"
+		Background="#66000000">
+		<Button
+			Name="CloseButton"
+			Opacity="0.01" />
+		<Border
+			Name="QrBorder"
+			Width="600"
+			Height="600"
+			Background="#FFFFFFFF"
+			CornerRadius="6"
+			VerticalAlignment="Center"
+			HorizontalAlignment="Center"
+			RenderTransformOrigin="0.5,0.5"
+			IsManipulationEnabled="True"
+			ManipulationStarting="QrBorder_OnManipulationStarting"
+			ManipulationDelta="QrBorder_OnManipulationDelta"
+			MouseWheel="QrBorder_OnMouseWheel">
+			<UIElement.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform
+						ScaleX="0.3"
+						ScaleY="0.3" />
+				</TransformGroup>
+			</UIElement.RenderTransform>
+			<Image
+				Name="QrImage"
+				Margin="10" />
+		</Border>
+	</Grid>
+</Window>

@@ -1,0 +1,159 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pptService="clr-namespace:PPTService" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions">
+	<Style
+		TargetType="{x:Type pptService:ImageButton}"
+		x:Key="{x:Type pptService:ImageButton}">
+		<Setter
+			Property="Background"
+			Value="#00FFFFFF" />
+		<Setter
+			Property="FrameworkElement.FocusVisualStyle"
+			Value="{x:Null}" />
+		<Setter
+			Property="Focusable"
+			Value="False" />
+		<Setter
+			Property="UIElement.SnapsToDevicePixels"
+			Value="True" />
+		<Setter
+			Property="Template">
+			<Setter.Value>
+				<ControlTemplate
+					TargetType="{x:Type pptService:ImageButton}">
+					<Border
+						Name="RootBorder"
+						Background="{TemplateBinding Background}"
+						CornerRadius="6"
+						BorderThickness="{TemplateBinding BorderThickness}"
+						BorderBrush="#80666666"
+						SnapsToDevicePixels="True">
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup
+								x:Name="AdaptiveStates">
+								<VisualState
+									x:Name="Adaptive0">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames
+											Storyboard.TargetName="RootBorder"
+											Storyboard.TargetProperty="CornerRadius">
+											<DiscreteObjectKeyFrame
+												KeyTime="0">
+												<ObjectKeyFrame.Value>
+													<CornerRadius>3</CornerRadius>
+												</ObjectKeyFrame.Value>
+											</DiscreteObjectKeyFrame>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames
+											Storyboard.TargetName="BackgroundImageGrid"
+											Storyboard.TargetProperty="Margin">
+											<DiscreteObjectKeyFrame
+												KeyTime="0">
+												<ObjectKeyFrame.Value>
+													<Thickness>8</Thickness>
+												</ObjectKeyFrame.Value>
+											</DiscreteObjectKeyFrame>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+								<VisualState
+									x:Name="Adaptive1440" />
+								<VisualState
+									x:Name="Adaptive3800">
+									<Storyboard>
+										<ObjectAnimationUsingKeyFrames
+											Storyboard.TargetName="RootBorder"
+											Storyboard.TargetProperty="CornerRadius">
+											<DiscreteObjectKeyFrame
+												KeyTime="0">
+												<ObjectKeyFrame.Value>
+													<CornerRadius>12</CornerRadius>
+												</ObjectKeyFrame.Value>
+											</DiscreteObjectKeyFrame>
+										</ObjectAnimationUsingKeyFrames>
+										<ObjectAnimationUsingKeyFrames
+											Storyboard.TargetName="BackgroundImageGrid"
+											Storyboard.TargetProperty="Margin">
+											<DiscreteObjectKeyFrame
+												KeyTime="0">
+												<ObjectKeyFrame.Value>
+													<Thickness>25</Thickness>
+												</ObjectKeyFrame.Value>
+											</DiscreteObjectKeyFrame>
+										</ObjectAnimationUsingKeyFrames>
+									</Storyboard>
+								</VisualState>
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+						<i:Interaction.Triggers>
+							<pptService:AdaptiveTrigger
+								MinWindowWidth="0">
+								<ei:GoToStateAction
+									StateName="Adaptive0" />
+							</pptService:AdaptiveTrigger>
+							<pptService:AdaptiveTrigger
+								MinWindowWidth="1440">
+								<ei:GoToStateAction
+									StateName="Adaptive1440" />
+							</pptService:AdaptiveTrigger>
+							<pptService:AdaptiveTrigger
+								MinWindowWidth="3800">
+								<ei:GoToStateAction
+									StateName="Adaptive3800" />
+							</pptService:AdaptiveTrigger>
+						</i:Interaction.Triggers>
+						<Grid>
+							<Grid
+								Name="BackgroundImageGrid"
+								Margin="11"
+								Focusable="False"
+								FocusVisualStyle="{x:Null}">
+								<FrameworkElement.Resources>
+									<ResourceDictionary>
+										<Storyboard
+											x:Key="ButtonPressedStoryBoard">
+											<DoubleAnimationUsingKeyFrames
+												Storyboard.TargetName="PART_PressedImage"
+												Storyboard.TargetProperty="Opacity">
+												<EasingDoubleKeyFrame
+													KeyTime="0"
+													Value="1" />
+												<EasingDoubleKeyFrame
+													KeyTime="0:0:0.1"
+													Value="0" />
+											</DoubleAnimationUsingKeyFrames>
+											<DoubleAnimationUsingKeyFrames
+												Storyboard.TargetName="PART_NormalImage"
+												Storyboard.TargetProperty="Opacity">
+												<EasingDoubleKeyFrame
+													KeyTime="0"
+													Value="0" />
+												<EasingDoubleKeyFrame
+													KeyTime="0:0:0.1"
+													Value="1" />
+											</DoubleAnimationUsingKeyFrames>
+										</Storyboard>
+									</ResourceDictionary>
+								</FrameworkElement.Resources>
+								<Image
+									Name="PART_NormalImage"
+									Source="{TemplateBinding pptService:ImageButton.NormalSource}"
+									Stretch="Fill"
+									SnapsToDevicePixels="True"
+									UseLayoutRounding="True" />
+								<Image
+									Name="PART_PressedImage"
+									Source="{TemplateBinding pptService:ImageButton.PressedSource}"
+									Stretch="Fill"
+									Opacity="0"
+									SnapsToDevicePixels="True"
+									UseLayoutRounding="True" />
+							</Grid>
+							<ContentPresenter
+								HorizontalAlignment="Center"
+								VerticalAlignment="Center" />
+						</Grid>
+					</Border>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+</ResourceDictionary>

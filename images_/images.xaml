@@ -1,0 +1,2898 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<DrawingImage
+		x:Key="ImageSource.ShareNormal">
+		<DrawingImage.Drawing>
+			<DrawingGroup
+				Transform="1,0,0,1,3,3">
+				<DrawingGroup.Children>
+					<GeometryDrawing
+						Brush="#FF666666">
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M0,10L10,10 10,0 0,0 0,10z M8,8L2,8 2,2 8,2 8,8 8,8z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FF666666">
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M0,26L10,26 10,16 0,16 0,26z M8,24L2,24 2,18 8,18 8,24 8,24z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FF666666">
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M16,10L26,10 26,0 16,0 16,10z M24,8L18,8 18,2 24,2 24,8 24,8z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FF666666">
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M0,12L26,12 26,14 0,14 0,12 0,12z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FF666666">
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M16,18L26,18 26,20 16,20 16,18 16,18z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FF666666">
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M14,24L26,24 26,26 14,26 14,24 14,24z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.SharePressed">
+		<DrawingImage.Drawing>
+			<DrawingGroup
+				Transform="1,0,0,1,3,3">
+				<DrawingGroup.Children>
+					<GeometryDrawing
+						Brush="#FF666666">
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M0,10L10,10 10,0 0,0 0,10z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FF666666">
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M0,26L10,26 10,16 0,16 0,26z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FF666666">
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M16,10L26,10 26,0 16,0 16,10z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FF666666">
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M0,12L26,12 26,14 0,14 0,12 0,12z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FF666666">
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M16,18L26,18 26,20 16,20 16,18 16,18z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FF666666">
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M14,24L26,24 26,26 14,26 14,24 14,24z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.PreviousSlideNormal">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="{x:Null}">
+						<GeometryDrawing.Pen>
+							<Pen
+								Brush="#FF666666"
+								Thickness="2"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter" />
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M8,13C7.8615516,13.5677816,7.8615516,14.4322348,8,15L22,27C22.8092249,27.3762198,24,26.8227297,24,26L24,2C24,1.1772867,22.8092249,0.623796567,22,1L8,13z"
+								Transform="-6.12303176911189E-17,1,-1,-6.12303176911189E-17,30,-2" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.PreviousSlideSelected">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FF666666"
+								Opacity="1"
+								Transform="-6.12303176911189E-17,1,-1,-6.12303176911189E-17,30,-2" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M8,13C7.8615516,13.5677816,7.8615516,14.4322348,8,15L22,27C22.8092249,27.3762198,24,26.8227297,24,26L24,2C24,1.1772867,22.8092249,0.623796567,22,1L8,13z"
+								Transform="-6.12303176911189E-17,1,-1,-6.12303176911189E-17,30,-2" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.NextSlideNormal">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="{x:Null}">
+						<GeometryDrawing.Pen>
+							<Pen
+								Brush="#FF666666"
+								Thickness="2"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter" />
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M8,17C7.8615516,17.5677816,7.8615516,18.4322348,8,19L22,31C22.8092249,31.3762198,24,30.8227297,24,30L24,6C24,5.1772867,22.8092249,4.62379657,22,5L8,17z"
+								Transform="-6.12303176911189E-17,-1,-1,6.12303176911189E-17,34,34" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.NextSlideSelected">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FF666666"
+								Opacity="1"
+								Transform="-6.12303176911189E-17,-1,-1,6.12303176911189E-17,34,34" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M8,17C7.8615516,17.5677816,7.8615516,18.4322348,8,19L22,31C22.8092249,31.3762198,24,30.8227297,24,30L24,6C24,5.1772867,22.8092249,4.62379657,22,5L8,17z"
+								Transform="-6.12303176911189E-17,-1,-1,6.12303176911189E-17,34,34" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.HorizontalPreviousSlideNormal">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="{x:Null}">
+						<GeometryDrawing.Pen>
+							<Pen
+								Brush="#FF666666"
+								Thickness="2"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter" />
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M7,15C6.85289858,15.5677816,6.85289858,16.4322348,7,17L22,29C22.7348015,29.3762198,24,28.8227297,24,28L24,4C24,3.1772867,22.7348015,2.62379657,22,3L7,15z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.HorizontalPreviousSlideSelected">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FF666666">
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M7,15C6.85289858,15.5677816,6.85289858,16.4322348,7,17L22,29C22.7348015,29.3762198,24,28.8227297,24,28L24,4C24,3.1772867,22.7348015,2.62379657,22,3L7,15z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.HorizontalNextSlideNormal">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="{x:Null}">
+						<GeometryDrawing.Pen>
+							<Pen
+								Brush="#FF666666"
+								Thickness="2"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter" />
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M8,15C7.85289858,15.5677816,7.85289858,16.4322348,8,17L23,29C23.7348015,29.3762198,25,28.8227297,25,28L25,4C25,3.1772867,23.7348015,2.62379657,23,3L8,15z"
+								Transform="-1,0,0,1,33,0" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.HorizontalNextSlideSelected">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FF666666"
+								Opacity="1"
+								Transform="-1,0,0,1,33,0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M8,15C7.85289858,15.5677816,7.85289858,16.4322348,8,17L23,29C23.7348015,29.3762198,25,28.8227297,25,28L25,4C25,3.1772867,23.7348015,2.62379657,23,3L8,15z"
+								Transform="-1,0,0,1,33,0" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.HPreviousSlideNormal">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="{x:Null}">
+						<GeometryDrawing.Pen>
+							<Pen
+								Brush="#FF666666"
+								Thickness="2"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter" />
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M7,15C6.85289858,15.5677816,6.85289858,16.4322348,7,17L22,29C22.7348015,29.3762198,24,28.8227297,24,28L24,4C24,3.1772867,22.7348015,2.62379657,22,3L7,15z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.HPreviousSlideSelected">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FF666666">
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M7,15C6.85289858,15.5677816,6.85289858,16.4322348,7,17L22,29C22.7348015,29.3762198,24,28.8227297,24,28L24,4C24,3.1772867,22.7348015,2.62379657,22,3L7,15z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.HNextSlideNormal">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="{x:Null}">
+						<GeometryDrawing.Pen>
+							<Pen
+								Brush="#FF666666"
+								Thickness="2"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter" />
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M8,15C7.85289858,15.5677816,7.85289858,16.4322348,8,17L23,29C23.7348015,29.3762198,25,28.8227297,25,28L25,4C25,3.1772867,23.7348015,2.62379657,23,3L8,15z"
+								Transform="-1,0,0,1,33,0" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.HNextSlideSelected">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FF666666"
+								Opacity="1"
+								Transform="-1,0,0,1,33,0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M8,15C7.85289858,15.5677816,7.85289858,16.4322348,8,17L23,29C23.7348015,29.3762198,25,28.8227297,25,28L25,4C25,3.1772867,23.7348015,2.62379657,23,3L8,15z"
+								Transform="-1,0,0,1,33,0" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.HideNormal">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="{x:Null}">
+						<GeometryDrawing.Pen>
+							<Pen
+								Brush="#FF666666"
+								Thickness="2"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter" />
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M8,15C7.85289858,15.5677816,7.85289858,16.4322348,8,17L23,29C23.7348015,29.3762198,25,28.8227297,25,28L25,4C25,3.1772867,23.7348015,2.62379657,23,3L8,15z"
+								Transform="0,-1,-1,0,33,33" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.HideSelected">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FF666666"
+								Opacity="1"
+						Transform="0,-1,-1,0,33,33" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M8,15C7.85289858,15.5677816,7.85289858,16.4322348,8,17L23,29C23.7348015,29.3762198,25,28.8227297,25,28L25,4C25,3.1772867,23.7348015,2.62379657,23,3L8,15z"
+				Transform="0,-1,-1,0,33,33" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.BackToSelectModeNormal">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="Nonzero"
+								Figures="M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<DrawingGroup
+						Transform="1,0,0,1,-2,0">
+						<DrawingGroup.Children>
+							<DrawingGroup>
+								<DrawingGroup.Children>
+									<GeometryDrawing
+										Brush="{x:Null}">
+										<GeometryDrawing.Pen>
+											<Pen
+												Brush="#FFFF0000"
+												Thickness="2"
+												StartLineCap="Round"
+												EndLineCap="Round"
+												LineJoin="Round"
+												MiterLimit="1" />
+										</GeometryDrawing.Pen>
+										<GeometryDrawing.Geometry>
+											<PathGeometry
+												FillRule="Nonzero"
+												Figures="M5,3L30.5,28.5" />
+										</GeometryDrawing.Geometry>
+									</GeometryDrawing>
+								</DrawingGroup.Children>
+							</DrawingGroup>
+							<DrawingGroup
+								Transform="1,0,0,1,4,2">
+								<DrawingGroup.Children>
+									<GeometryDrawing
+										Brush="{x:Null}">
+										<GeometryDrawing.Pen>
+											<Pen
+												Brush="#FFFF0000"
+												Thickness="2"
+												StartLineCap="Round"
+												EndLineCap="Round"
+												LineJoin="Round"
+												MiterLimit="1" />
+										</GeometryDrawing.Pen>
+										<GeometryDrawing.Geometry>
+											<PathGeometry
+												FillRule="Nonzero"
+												Figures="M0,27L0,21.8 20.4,1.4C21.2,0.6,22.5,0.6,23.2,1.4L25.6,3.8C26.4,4.6,26.4,5.8,25.6,6.6L5.2,27 0,27z" />
+										</GeometryDrawing.Geometry>
+									</GeometryDrawing>
+									<GeometryDrawing
+										Brush="{x:Null}">
+										<GeometryDrawing.Pen>
+											<Pen
+												Brush="#FFFF0000"
+												Thickness="2"
+												StartLineCap="Round"
+												EndLineCap="Round"
+												LineJoin="Round"
+												MiterLimit="1" />
+										</GeometryDrawing.Pen>
+										<GeometryDrawing.Geometry>
+											<PathGeometry
+												FillRule="Nonzero"
+												Figures="M17,5L22,10" />
+										</GeometryDrawing.Geometry>
+									</GeometryDrawing>
+								</DrawingGroup.Children>
+							</DrawingGroup>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.BackToSelectModeSelected">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="Nonzero"
+								Figures="M-352,316L-351,316 -351,317 -352,317 -352,316z M-383,285L-382,285 -382,286 -383,286 -383,285z" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<DrawingGroup
+						Transform="1,0,0,1,-2,0">
+						<DrawingGroup.Children>
+							<DrawingGroup>
+								<DrawingGroup.Children>
+									<GeometryDrawing
+										Brush="{x:Null}">
+										<GeometryDrawing.Pen>
+											<Pen
+												Brush="#FFFF0000"
+												Thickness="2"
+												StartLineCap="Round"
+												EndLineCap="Round"
+												LineJoin="Round" />
+										</GeometryDrawing.Pen>
+										<GeometryDrawing.Geometry>
+											<PathGeometry
+												FillRule="Nonzero"
+												Figures="M-378,288L-352.5,313.5" />
+										</GeometryDrawing.Geometry>
+									</GeometryDrawing>
+								</DrawingGroup.Children>
+							</DrawingGroup>
+							<DrawingGroup
+								Transform="1,0,0,1,4,2">
+								<DrawingGroup.Children>
+									<GeometryDrawing
+										Brush="#FFFF0000">
+										<GeometryDrawing.Geometry>
+											<PathGeometry
+												FillRule="Nonzero"
+												Figures="M-366.8,290.6L-383,306.8 -383,312 -377.8,312 -361.6,295.8C-361.6,295.8,-361.7,295.7,-361.7,295.7L-366.7,290.7C-366.7,290.7,-366.8,290.6,-366.8,290.6z M-365.4,289.2L-362.6,286.4C-361.8,285.6,-360.5,285.6,-359.8,286.4L-357.4,288.8C-356.6,289.6,-356.6,290.8,-357.4,291.6L-360.2,294.4C-360.2,294.4,-360.3,294.3,-360.3,294.3L-365.3,289.3C-365.3,289.3,-365.4,289.2,-365.4,289.2z" />
+										</GeometryDrawing.Geometry>
+									</GeometryDrawing>
+								</DrawingGroup.Children>
+							</DrawingGroup>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.GrayPenNormal">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<DrawingGroup
+						Transform="0.707106781186547,0.707106781186548,-0.707106781186548,0.707106781186547,23.8700581554251,2.51522862093623E-07">
+						<DrawingGroup.Children>
+							<GeometryDrawing
+								Brush="{x:Null}">
+								<GeometryDrawing.Pen>
+									<Pen
+										Brush="#FF666666"
+										Thickness="2"
+										StartLineCap="Flat"
+										EndLineCap="Flat"
+										LineJoin="Miter" />
+								</GeometryDrawing.Pen>
+								<GeometryDrawing.Geometry>
+									<StreamGeometry>M0.55528309,3.52087909C0.541008827,1.86875138,1.87808175,0.529437252,3.52976698,0.529437252L7.52910752,0.529437252C9.18614387,0.529437252,10.536701,1.86999713,10.5456462,3.52087909L10.6984846,31.7279217 5.74873752,36.6776688 0.79898987,31.7279217 0.55528309,3.52087909z</StreamGeometry>
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="0"
+										RadiusY="0"
+										Rect="0.7647,21.5294,9.5294,2" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.GrayPenSelected">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<DrawingGroup
+						Transform="1,0,0,1,2,2">
+						<DrawingGroup.Children>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Geometry>
+									<StreamGeometry>M16.0635251,5.74416719L2.30584782E-16,21.8076923 0,27 5.19230769,27 21.2558328,10.9364749C21.2166405,10.9145235,21.1797762,10.886883,21.1464466,10.8535534L16.1464466,5.85355339C16.113117,5.82022382,16.0854765,5.78335952,16.0635251,5.74416719z M16.7441672,5.06352512L20.3936317,1.41406061C21.1745958,0.633096501,22.4443712,0.636678842,23.2265132,1.41882089L25.5811791,3.7734868C26.3647722,4.55707994,26.3708568,5.82145093,25.5859394,6.6063683L21.9364749,10.2558328C21.9145235,10.2166405,21.886883,10.1797762,21.8535534,10.1464466L16.8535534,5.14644661C16.8202238,5.11311704,16.7833595,5.08547655,16.7441672,5.06352512z</StreamGeometry>
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.RedPenNormal">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="Red"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<DrawingGroup
+						Transform="1,0,0,1,2,2">
+						<DrawingGroup.Children>
+							<GeometryDrawing
+								Brush="{x:Null}">
+								<GeometryDrawing.Pen>
+									<Pen
+										Brush="#FFFF0000"
+										Thickness="2"
+										StartLineCap="Round"
+										EndLineCap="Round"
+										LineJoin="Round" />
+								</GeometryDrawing.Pen>
+								<GeometryDrawing.Geometry>
+									<PathGeometry
+										FillRule="EvenOdd"
+										Figures="M0,27L2.30584782E-16,21.8076923 20.3936317,1.41406061C21.1745958,0.633096501,22.4443712,0.636678842,23.2265132,1.41882089L25.5811791,3.7734868C26.3647722,4.55707994,26.3708568,5.82145093,25.5859394,6.6063683L5.19230769,27 0,27z" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="{x:Null}">
+								<GeometryDrawing.Pen>
+									<Pen
+										Brush="#FFFF0000"
+										Thickness="2"
+										StartLineCap="Round"
+										EndLineCap="Round"
+										LineJoin="Round" />
+								</GeometryDrawing.Pen>
+								<GeometryDrawing.Geometry>
+									<PathGeometry
+										FillRule="EvenOdd"
+										Figures="M17,5L22,10" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.RedPenSelected">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<DrawingGroup
+						Transform="1,0,0,1,2,3">
+						<DrawingGroup.Children>
+							<GeometryDrawing
+								Brush="#FFFF0000">
+								<GeometryDrawing.Geometry>
+									<PathGeometry
+										FillRule="EvenOdd"
+										Figures="M16.0635251,4.74416719L2.30584782E-16,20.8076923 0,26 5.19230769,26 21.2558328,9.93647488C21.2166405,9.91452345,21.1797762,9.88688296,21.1464466,9.85355339L16.1464466,4.85355339C16.113117,4.82022382,16.0854765,4.78335952,16.0635251,4.74416719z M16.7441672,4.06352512L20.3936317,0.414060613C21.1745958,-0.366903499,22.4443712,-0.363321158,23.2265132,0.418820895L25.5811791,2.7734868C26.3647722,3.55707994,26.3708568,4.82145093,25.5859394,5.6063683L21.9364749,9.25583281C21.9145235,9.21664048,21.886883,9.17977618,21.8535534,9.14644661L16.8535534,4.14644661C16.8202238,4.11311704,16.7833595,4.08547655,16.7441672,4.06352512z" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.BluePenNormal">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#0085CD"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<DrawingGroup
+						Transform="1,0,0,1,2,2">
+						<DrawingGroup.Children>
+							<GeometryDrawing
+								Brush="{x:Null}">
+								<GeometryDrawing.Pen>
+									<Pen
+										Brush="#0085CD"
+										Thickness="2"
+										StartLineCap="Round"
+										EndLineCap="Round"
+										LineJoin="Round" />
+								</GeometryDrawing.Pen>
+								<GeometryDrawing.Geometry>
+									<PathGeometry
+										FillRule="EvenOdd"
+										Figures="M0,27L2.30584782E-16,21.8076923 20.3936317,1.41406061C21.1745958,0.633096501,22.4443712,0.636678842,23.2265132,1.41882089L25.5811791,3.7734868C26.3647722,4.55707994,26.3708568,5.82145093,25.5859394,6.6063683L5.19230769,27 0,27z" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="{x:Null}">
+								<GeometryDrawing.Pen>
+									<Pen
+										Brush="#0085CD"
+										Thickness="2"
+										StartLineCap="Round"
+										EndLineCap="Round"
+										LineJoin="Round" />
+								</GeometryDrawing.Pen>
+								<GeometryDrawing.Geometry>
+									<PathGeometry
+										FillRule="EvenOdd"
+										Figures="M17,5L22,10" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.BluePenSelected">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<DrawingGroup
+						Transform="1,0,0,1,2,3">
+						<DrawingGroup.Children>
+							<GeometryDrawing
+								Brush="#0085CD">
+								<GeometryDrawing.Geometry>
+									<PathGeometry
+										FillRule="EvenOdd"
+										Figures="M16.0635251,4.74416719L2.30584782E-16,20.8076923 0,26 5.19230769,26 21.2558328,9.93647488C21.2166405,9.91452345,21.1797762,9.88688296,21.1464466,9.85355339L16.1464466,4.85355339C16.113117,4.82022382,16.0854765,4.78335952,16.0635251,4.74416719z M16.7441672,4.06352512L20.3936317,0.414060613C21.1745958,-0.366903499,22.4443712,-0.363321158,23.2265132,0.418820895L25.5811791,2.7734868C26.3647722,3.55707994,26.3708568,4.82145093,25.5859394,5.6063683L21.9364749,9.25583281C21.9145235,9.21664048,21.886883,9.17977618,21.8535534,9.14644661L16.8535534,4.14644661C16.8202238,4.11311704,16.7833595,4.08547655,16.7441672,4.06352512z" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.BlackPenNormal">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="Black"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<DrawingGroup
+						Transform="1,0,0,1,2,2">
+						<DrawingGroup.Children>
+							<GeometryDrawing
+								Brush="{x:Null}">
+								<GeometryDrawing.Pen>
+									<Pen
+										Brush="#FF000000"
+										Thickness="2"
+										StartLineCap="Round"
+										EndLineCap="Round"
+										LineJoin="Round" />
+								</GeometryDrawing.Pen>
+								<GeometryDrawing.Geometry>
+									<PathGeometry
+										FillRule="EvenOdd"
+										Figures="M0,27L2.30584782E-16,21.8076923 20.3936317,1.41406061C21.1745958,0.633096501,22.4443712,0.636678842,23.2265132,1.41882089L25.5811791,3.7734868C26.3647722,4.55707994,26.3708568,5.82145093,25.5859394,6.6063683L5.19230769,27 0,27z" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="{x:Null}">
+								<GeometryDrawing.Pen>
+									<Pen
+										Brush="#FF000000"
+										Thickness="2"
+										StartLineCap="Round"
+										EndLineCap="Round"
+										LineJoin="Round" />
+								</GeometryDrawing.Pen>
+								<GeometryDrawing.Geometry>
+									<PathGeometry
+										FillRule="EvenOdd"
+										Figures="M17,5L22,10" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.BlackPenSelected">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<DrawingGroup
+						Transform="1,0,0,1,2,3">
+						<DrawingGroup.Children>
+							<GeometryDrawing
+								Brush="#FF000000">
+								<GeometryDrawing.Geometry>
+									<PathGeometry
+										FillRule="EvenOdd"
+										Figures="M16.0635251,4.74416719L2.30584782E-16,20.8076923 0,26 5.19230769,26 21.2558328,9.93647488C21.2166405,9.91452345,21.1797762,9.88688296,21.1464466,9.85355339L16.1464466,4.85355339C16.113117,4.82022382,16.0854765,4.78335952,16.0635251,4.74416719z M16.7441672,4.06352512L20.3936317,0.414060613C21.1745958,-0.366903499,22.4443712,-0.363321158,23.2265132,0.418820895L25.5811791,2.7734868C26.3647722,3.55707994,26.3708568,4.82145093,25.5859394,5.6063683L21.9364749,9.25583281C21.9145235,9.21664048,21.886883,9.17977618,21.8535534,9.14644661L16.8535534,4.14644661C16.8202238,4.11311704,16.7833595,4.08547655,16.7441672,4.06352512z" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.RubberNormal">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<DrawingGroup
+						Transform="-0.707106781186548,-0.707106781186547,-0.707106781186547,0.707106781186548,31.056349186104,11.9644658752538">
+						<DrawingGroup.Children>
+							<GeometryDrawing
+								Brush="{x:Null}">
+								<GeometryDrawing.Pen>
+									<Pen
+										Brush="#FF666666"
+										Thickness="2"
+										StartLineCap="Flat"
+										EndLineCap="Flat"
+										LineJoin="Miter" />
+								</GeometryDrawing.Pen>
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="1"
+										RadiusY="1"
+										Rect="0.6643,1,16,25" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="{x:Null}">
+								<GeometryDrawing.Pen>
+									<Pen
+										Brush="#FF666666"
+										Thickness="2"
+										StartLineCap="Flat"
+										EndLineCap="Flat"
+										LineJoin="Miter" />
+								</GeometryDrawing.Pen>
+								<GeometryDrawing.Geometry>
+									<PathGeometry
+										FillRule="EvenOdd"
+										Figures="M1.26445359,18C0.708679757,18,0.699035945,18,1.26445359,18L15.7355464,18C16.2913202,18,16.3009641,18,15.7355464,18L1.26445359,18z" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.RubberSelected">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<DrawingGroup
+						Transform="-0.707106781186548,-0.707106781186547,-0.707106781186547,0.707106781186548,31.4055917955108,13.0208154846605">
+						<DrawingGroup.Children>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Geometry>
+									<PathGeometry
+										FillRule="EvenOdd"
+										Figures="M16.7928932,16.2426407L16.7928932,0.788350252C16.7928932,0.248156103,16.3447877,-0.207106781,15.7920216,-0.207106781L1.79376488,-0.207106781C1.23752408,-0.207106781,0.792893219,0.238574513,0.792893219,0.788350252L0.792893219,16.2426407 16.7928932,16.2426407z M16.7928932,18.2426407L16.7928932,23.7974362C16.7928932,24.3472119,16.3482624,24.7928932,15.7920216,24.7928932L1.79376488,24.7928932C1.24099872,24.7928932,0.792893219,24.3376303,0.792893219,23.7974362L0.792893219,18.2426407 16.7928932,18.2426407z" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.ExitNormal">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<DrawingGroup
+						Transform="1,0,0,1,1,2">
+						<DrawingGroup.Children>
+							<GeometryDrawing
+								Brush="{x:Null}">
+								<GeometryDrawing.Pen>
+									<Pen
+										Brush="#FF666666"
+										Thickness="2"
+										StartLineCap="Flat"
+										EndLineCap="Flat"
+										LineJoin="Miter" />
+								</GeometryDrawing.Pen>
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="0"
+										RadiusY="0"
+										Rect="3,3,24,16" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Geometry>
+									<PathGeometry
+										FillRule="EvenOdd"
+										Figures="M13.5355339,10.9497475L10,14.4852814 11.4142136,15.8994949 14.9497475,12.363961 18.4852814,15.8994949 19.8994949,14.4852814 16.363961,10.9497475 19.8994949,7.41421356 18.4852814,6 14.9497475,9.53553391 11.4142136,6 10,7.41421356 13.5355339,10.9497475z" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="0"
+										RadiusY="0"
+										Rect="14,19,2,8" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="0"
+										RadiusY="0"
+										Rect="0,2,30,2" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="0"
+										RadiusY="0"
+										Rect="13,0,4,2" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="0"
+										RadiusY="0"
+										Rect="7,26,16,2" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.ExitSelected">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<DrawingGroup
+						Transform="1,0,0,1,1,2">
+						<DrawingGroup.Children>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Geometry>
+									<PathGeometry
+										FillRule="EvenOdd"
+										Figures="M13.5857864,11L10.0502525,14.5355339 11.4644661,15.9497475 15,12.4142136 18.5355339,15.9497475 19.9497475,14.5355339 16.4142136,11 19.9497475,7.46446609 18.5355339,6.05025253 15,9.58578644 11.4644661,6.05025253 10.0502525,7.46446609 13.5857864,11z M2,2L28,2 28,20 2,20 2,2z" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="0"
+										RadiusY="0"
+										Rect="14,19,2,8" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="0"
+										RadiusY="0"
+										Rect="0,2,30,2" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="0"
+										RadiusY="0"
+										Rect="13,0,4,2" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="0"
+										RadiusY="0"
+										Rect="7,26,16,2" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.MagnifierNormal">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<DrawingGroup
+						Transform="1,0,0,1,3,3">
+						<DrawingGroup.Children>
+							<GeometryDrawing
+								Brush="{x:Null}">
+								<GeometryDrawing.Pen>
+									<Pen
+										Brush="#FF666666"
+										Thickness="2"
+										StartLineCap="Flat"
+										EndLineCap="Flat"
+										LineJoin="Miter" />
+								</GeometryDrawing.Pen>
+								<GeometryDrawing.Geometry>
+									<EllipseGeometry
+										RadiusX="11"
+										RadiusY="11"
+										Center="11,11" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing>
+								<GeometryDrawing.Brush>
+									<SolidColorBrush
+										Color="#FF666666"
+										Opacity="1"
+										Transform="-0.707106781186548,-0.707106781186547,-0.707106781186547,0.707106781186548,53.942202838531,22.343592" />
+								</GeometryDrawing.Brush>
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="1"
+										RadiusY="1"
+										Rect="16.9079,21.3436,10.8713,2"
+										Transform="-0.707106781186548,-0.707106781186547,-0.707106781186547,0.707106781186548,53.942202838531,22.343592" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.MagnifierSelected">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<DrawingGroup
+						Transform="1,0,0,1,3,3">
+						<DrawingGroup.Children>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Geometry>
+									<EllipseGeometry
+										RadiusX="11"
+										RadiusY="11"
+										Center="11,11" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing>
+								<GeometryDrawing.Brush>
+									<SolidColorBrush
+										Color="#FF666666"
+										Opacity="1"
+										Transform="-0.707106781186548,-0.707106781186547,-0.707106781186547,0.707106781186548,53.3386494479377,22.093592" />
+								</GeometryDrawing.Brush>
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="1"
+										RadiusY="1"
+										Rect="16.3044,21.0936,11.5784,2"
+										Transform="-0.707106781186548,-0.707106781186547,-0.707106781186547,0.707106781186548,53.3386494479377,22.093592" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.PlateNormal">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<DrawingGroup
+						Transform="1,0,0,1,0,3">
+						<DrawingGroup.Children>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="0"
+										RadiusY="0"
+										Rect="15,19,2,6" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="{x:Null}">
+								<GeometryDrawing.Pen>
+									<Pen
+										Brush="#FF666666"
+										Thickness="2"
+										StartLineCap="Flat"
+										EndLineCap="Flat"
+										LineJoin="Miter" />
+								</GeometryDrawing.Pen>
+								<GeometryDrawing.Geometry>
+									<EllipseGeometry
+										RadiusX="1"
+										RadiusY="1"
+										Center="16,25" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="{x:Null}">
+								<GeometryDrawing.Pen>
+									<Pen
+										Brush="#FF666666"
+										Thickness="2"
+										StartLineCap="Flat"
+										EndLineCap="Flat"
+										LineJoin="Miter" />
+								</GeometryDrawing.Pen>
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="1"
+										RadiusY="1"
+										Rect="4,0,24,19" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="1"
+										RadiusY="1"
+										Rect="0,18,32,2" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.PlateSelected">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<DrawingGroup
+						Transform="1,0,0,1,0,3">
+						<DrawingGroup.Children>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="0"
+										RadiusY="0"
+										Rect="15,19,2,6" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="{x:Null}">
+								<GeometryDrawing.Pen>
+									<Pen
+										Brush="#FF666666"
+										Thickness="2"
+										StartLineCap="Flat"
+										EndLineCap="Flat"
+										LineJoin="Miter" />
+								</GeometryDrawing.Pen>
+								<GeometryDrawing.Geometry>
+									<EllipseGeometry
+										RadiusX="1"
+										RadiusY="1"
+										Center="16,25" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Pen>
+									<Pen
+										Brush="#FF666666"
+										Thickness="2"
+										StartLineCap="Flat"
+										EndLineCap="Flat"
+										LineJoin="Miter" />
+								</GeometryDrawing.Pen>
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="1"
+										RadiusY="1"
+										Rect="4,0,24,19" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="1"
+										RadiusY="1"
+										Rect="0,18,32,2" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.ToolTip">
+		<DrawingImage.Drawing>
+			<DrawingGroup
+				Transform="1,0,0,1,45,929">
+				<DrawingGroup.Children>
+					<GeometryDrawing
+						Brush="#F8E71C">
+						<GeometryDrawing.Pen>
+							<Pen
+								Brush="#6B6408"
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter" />
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M89.7279221,76L150.003993,76C153.308762,76,156,73.3158039,156,70.0046803L156,5.99531974C156,2.68255679,153.315496,0,150.003993,0L5.99600749,0C2.69123763,0,0,2.68419608,0,5.99531974L0,70.0046803C0,73.3174432,2.68450399,76,5.99600749,76L66.2720779,76 78,87.7279221 89.7279221,76z" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.SlideIndex">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing
+						Brush="#FFFFFFFF">
+						<GeometryDrawing.Pen>
+							<Pen
+								Brush="#80666666"
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter" />
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M2,592.995089C2,591.893232,2.89784041,591,3.99161703,591L30.008383,591C31.1083227,591,32.4361176,591.785012,32.9679282,592.742271L42,609 2,609 2,592.995089z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.AddSlideNormal">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FF666666"
+								Opacity="1"
+								Transform="0.707106781186548,-0.707106781186547,0.707106781186547,0.707106781186548,-6.65767198499238,16.073042" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M14.6588281,16.0730417L8.29660774,22.435262C7.89850427,22.8333655 7.90434278,23.460692 8.29486708,23.8512163 8.68811403,24.2444632 9.31933567,24.2409612 9.7108213,23.8494756L16.0730417,17.4872552 22.435262,23.8494756C22.8333655,24.2475791 23.460692,24.2417406 23.8512163,23.8512163 24.2444632,23.4579693 24.2409612,22.8267477 23.8494756,22.435262L17.4872552,16.0730417 23.8494756,9.7108213C24.2475791,9.31271783 24.2417406,8.68539137 23.8512163,8.29486708 23.4579693,7.90162012 22.8267477,7.90512211 22.435262,8.29660774L16.0730417,14.6588281 9.7108213,8.29660774C9.31271783,7.89850427 8.68539137,7.90434278 8.29486708,8.29486708 7.90162012,8.68811403 7.90512211,9.31933567 8.29660774,9.7108213L14.6588281,16.0730417z"
+								Transform="0.707106781186548,-0.707106781186547,0.707106781186547,0.707106781186548,-6.65767198499238,16.073042" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.AddSlideSelected">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FF999999"
+								Opacity="1"
+								Transform="0.707106781186548,-0.707106781186547,0.707106781186547,0.707106781186548,-6.65767198499238,16.073042" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M14.6588281,16.0730417L8.29660774,22.435262C7.89850427,22.8333655 7.90434278,23.460692 8.29486708,23.8512163 8.68811403,24.2444632 9.31933567,24.2409612 9.7108213,23.8494756L16.0730417,17.4872552 22.435262,23.8494756C22.8333655,24.2475791 23.460692,24.2417406 23.8512163,23.8512163 24.2444632,23.4579693 24.2409612,22.8267477 23.8494756,22.435262L17.4872552,16.0730417 23.8494756,9.7108213C24.2475791,9.31271783 24.2417406,8.68539137 23.8512163,8.29486708 23.4579693,7.90162012 22.8267477,7.90512211 22.435262,8.29660774L16.0730417,14.6588281 9.7108213,8.29660774C9.31271783,7.89850427 8.68539137,7.90434278 8.29486708,8.29486708 7.90162012,8.68811403 7.90512211,9.31933567 8.29660774,9.7108213L14.6588281,16.0730417z"
+								Transform="0.707106781186548,-0.707106781186547,0.707106781186547,0.707106781186548,-6.65767198499238,16.073042" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.CloseNormal">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FF666666">
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M14.3648396,15.7790531L7.29426294,22.8496298C6.9030735,23.2408192 6.90324747,23.8738102 7.29377176,24.2643345 7.68701872,24.6575815 8.31768094,24.6546389 8.70847651,24.2638433L15.7790531,17.1932667 22.8496298,24.2638433C23.2408192,24.6550328 23.8738102,24.6548588 24.2643345,24.2643345 24.6575815,23.8710876 24.6546389,23.2404253 24.2638433,22.8496298L17.1932667,15.7790531 24.2638433,8.70847651C24.6550328,8.31728707 24.6548588,7.68429606 24.2643345,7.29377176 23.8710876,6.90052481 23.2404253,6.90346738 22.8496298,7.29426294L15.7790531,14.3648396 8.70847651,7.29426294C8.31728707,6.9030735 7.68429606,6.90324747 7.29377176,7.29377176 6.90052481,7.68701872 6.90346738,8.31768094 7.29426294,8.70847651L14.3648396,15.7790531z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.CloseSelected">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FF999999">
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M14.3648396,15.7790531L7.29426294,22.8496298C6.9030735,23.2408192 6.90324747,23.8738102 7.29377176,24.2643345 7.68701872,24.6575815 8.31768094,24.6546389 8.70847651,24.2638433L15.7790531,17.1932667 22.8496298,24.2638433C23.2408192,24.6550328 23.8738102,24.6548588 24.2643345,24.2643345 24.6575815,23.8710876 24.6546389,23.2404253 24.2638433,22.8496298L17.1932667,15.7790531 24.2638433,8.70847651C24.6550328,8.31728707 24.6548588,7.68429606 24.2643345,7.29377176 23.8710876,6.90052481 23.2404253,6.90346738 22.8496298,7.29426294L15.7790531,14.3648396 8.70847651,7.29426294C8.31728707,6.9030735 7.68429606,6.90324747 7.29377176,7.29377176 6.90052481,7.68701872 6.90346738,8.31768094 7.29426294,8.70847651L14.3648396,15.7790531z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.SaveNormal">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<DrawingGroup
+						Transform="1,0,0,1,3,3">
+						<DrawingGroup.Children>
+							<GeometryDrawing
+								Brush="{x:Null}">
+								<GeometryDrawing.Pen>
+									<Pen
+										Brush="#FF666666"
+										Thickness="2"
+										StartLineCap="Round"
+										EndLineCap="Round"
+										LineJoin="Round"
+										MiterLimit="1" />
+								</GeometryDrawing.Pen>
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="1"
+										RadiusY="1"
+										Rect="0,0,26,26" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="{x:Null}">
+								<GeometryDrawing.Pen>
+									<Pen
+										Brush="#FF666666"
+										Thickness="2"
+										StartLineCap="Round"
+										EndLineCap="Round"
+										LineJoin="Round"
+										MiterLimit="1" />
+								</GeometryDrawing.Pen>
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="1"
+										RadiusY="1"
+										Rect="6,19,14,7" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="{x:Null}">
+								<GeometryDrawing.Pen>
+									<Pen
+										Brush="#FF666666"
+										Thickness="2"
+										StartLineCap="Round"
+										EndLineCap="Round"
+										LineJoin="Round"
+										MiterLimit="1" />
+								</GeometryDrawing.Pen>
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="1"
+										RadiusY="1"
+										Rect="4,0,18,13" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="0"
+										RadiusY="0"
+										Rect="9,22,2,4" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.SaveSelected">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<DrawingGroup
+						Transform="1,0,0,1,3,3">
+						<DrawingGroup.Children>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Geometry>
+									<StreamGeometry>M0,1.00329963C0,0.449192547,0.451278687,0,1.00329963,0L24.9967004,0C25.5508075,0,26,0.451278687,26,1.00329963L26,24.9967004C26,25.5508075,25.5487213,26,24.9967004,26L1.00329963,26C0.449192547,26,0,25.5487213,0,24.9967004L0,1.00329963z M4,2L22,2 22,12.0044225C22,12.5542648,21.5550537,13,21.0066023,13L4.99339768,13C4.44475929,13,4,12.555163,4,12.0044225L4,2z M6,18.990778C6,18.4435864,6.44994876,18,7.00684547,18L18.9931545,18C19.5492199,18,20,18.4509752,20,18.990778L20,24 6,24 6,18.990778z</StreamGeometry>
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="0"
+										RadiusY="0"
+										Rect="9,22,2,4" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.CloseInnerBoard">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFFFFFFF"
+								Opacity="0.7"
+								Transform="1,0,0,-1,0,1943.312028" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M928,966L910,971.147391 891.921867,966.442265C889.328713,965.824268 886.734911,965.464863 886.12781,968.108478 885.52071,970.752085 887.131214,971.396361 889.725016,972.014357L909.93903,977.280052 910.06097,977.312029 930.274984,972.014357C932.868786,971.396361 934.478643,970.752093 933.87219,968.108478 933.265089,965.464863 930.671287,965.824268 928,966z"
+								Transform="1,0,0,-1,0,1943.312028" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.SelectNormal">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="{x:Null}">
+						<GeometryDrawing.Pen>
+							<Pen
+								Brush="#FF666666"
+								Thickness="2"
+								StartLineCap="Round"
+								EndLineCap="Round"
+								LineJoin="Round"
+								MiterLimit="1" />
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M26,16.7272727L6,2 11,26.5454545 16,19.1818182 21,27.7727273C21.9466695,28.8599954 22.7684923,29.1364629 23.5,29 24.7677457,28.1996036 25.043891,27.3774489 24.75,26.5454545 24.7890779,26.4275645 18.5,17.9545455 18.5,17.9545455L26,16.7272727z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.SelectSelected">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter">
+								<Pen.Brush>
+									<SolidColorBrush
+										Color="#FF979797"
+										Opacity="0" />
+								</Pen.Brush>
+							</Pen>
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FF666666">
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M26,18L6,3 11,28 16,20 21,29C21.9466695,29.8599954 22.7684923,30.1364629 24,30 24.7677457,29.1996036 25.043891,28.3774489 25,28 24.7890779,27.4275645 19,19 19,19L26,18z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.ColorDisk">
+		<DrawingImage.Drawing>
+			<DrawingGroup
+				Transform="1,0,0,1,773,962">
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFFFFFFF"
+								Opacity="1"
+								Transform="6.12303176911189E-17,-1,1,6.12303176911189E-17,48.163821,103.836179" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Pen>
+							<Pen
+								Brush="#FFCCCCCC"
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter" />
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="EvenOdd"
+								Figures="M55.836179,35.5085369L55.836179,96.8401937C55.836179,100.152958,58.5253298,102.836179,61.8425655,102.836179L97.8297924,102.836179C101.152638,102.836179,103.836179,100.151685,103.836179,96.8401937L103.836179,-41.1678358C103.836179,-44.4805998,101.147028,-47.163821,97.8297924,-47.163821L61.8425655,-47.163821C58.5197202,-47.163821,55.836179,-44.479327,55.836179,-41.1678358L55.836179,20.163821 48.163821,27.836179 55.836179,35.5085369z"
+								Transform="6.12303176911189E-17,-1,1,6.12303176911189E-17,48.163821,103.836179" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.EasiCameraNormal">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="Nonzero"
+								Figures="M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<DrawingGroup
+						Transform="1,0,0,1,4,2">
+						<DrawingGroup.Children>
+							<GeometryDrawing
+								Brush="{x:Null}">
+								<GeometryDrawing.Pen>
+									<Pen
+										Brush="#FF666666"
+										Thickness="2"
+										StartLineCap="Round"
+										EndLineCap="Round"
+										LineJoin="Round"
+										MiterLimit="1" />
+								</GeometryDrawing.Pen>
+								<GeometryDrawing.Geometry>
+									<PathGeometry
+										FillRule="Nonzero"
+										Figures="M6.5,23L21.5,23" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<DrawingGroup>
+								<DrawingGroup.Children>
+									<GeometryDrawing
+										Brush="#FF666666">
+										<GeometryDrawing.Geometry>
+											<PathGeometry
+												FillRule="Nonzero"
+												Figures="M18,2L18,10 10,10 10,2 18,2 M19,0L9,0C8.4,0,8,0.4,8,1L8,11C8,11.6,8.4,12,9,12L19,12C19.6,12,20,11.6,20,11L20,1C20,0.4,19.6,0,19,0L19,0z" />
+										</GeometryDrawing.Geometry>
+									</GeometryDrawing>
+								</DrawingGroup.Children>
+							</DrawingGroup>
+							<DrawingGroup>
+								<DrawingGroup.Children>
+									<GeometryDrawing
+										Brush="#FF666666">
+										<GeometryDrawing.Geometry>
+											<PathGeometry
+												FillRule="Nonzero"
+												Figures="M16,12L16,13 12,13 12,12 16,12 M17,10L11,10C10.4,10,10,10.4,10,11L10,14C10,14.6,10.4,15,11,15L17,15C17.6,15,18,14.6,18,14L18,11C18,10.4,17.6,10,17,10L17,10z" />
+										</GeometryDrawing.Geometry>
+									</GeometryDrawing>
+								</DrawingGroup.Children>
+							</DrawingGroup>
+							<GeometryDrawing
+								Brush="{x:Null}">
+								<GeometryDrawing.Pen>
+									<Pen
+										Brush="#FF666666"
+										Thickness="2"
+										StartLineCap="Round"
+										EndLineCap="Round"
+										LineJoin="Round"
+										MiterLimit="1" />
+								</GeometryDrawing.Pen>
+								<GeometryDrawing.Geometry>
+									<PathGeometry
+										FillRule="Nonzero"
+										Figures="M24,27L0,27 0,18 9,6.1" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.EasiCameraSelected">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="Nonzero"
+								Figures="M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<DrawingGroup
+						Transform="1,0,0,1,4,2">
+						<DrawingGroup.Children>
+							<GeometryDrawing
+								Brush="{x:Null}">
+								<GeometryDrawing.Pen>
+									<Pen
+										Brush="#FF666666"
+										Thickness="2"
+										StartLineCap="Round"
+										EndLineCap="Round"
+										LineJoin="Round"
+										MiterLimit="1" />
+								</GeometryDrawing.Pen>
+								<GeometryDrawing.Geometry>
+									<PathGeometry
+										FillRule="Nonzero"
+										Figures="M6.5,23L21.5,23" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<DrawingGroup>
+								<DrawingGroup.Children>
+									<GeometryDrawing
+										Brush="#FF666666">
+										<GeometryDrawing.Geometry>
+											<RectangleGeometry
+												RadiusX="0"
+												RadiusY="0"
+												Rect="9,1,10,10" />
+										</GeometryDrawing.Geometry>
+									</GeometryDrawing>
+									<GeometryDrawing
+										Brush="#FF666666">
+										<GeometryDrawing.Geometry>
+											<PathGeometry
+												FillRule="Nonzero"
+												Figures="M18,2L18,10 10,10 10,2 18,2 M19,0L9,0C8.4,0,8,0.4,8,1L8,11C8,11.6,8.4,12,9,12L19,12C19.6,12,20,11.6,20,11L20,1C20,0.4,19.6,0,19,0L19,0z" />
+										</GeometryDrawing.Geometry>
+									</GeometryDrawing>
+								</DrawingGroup.Children>
+							</DrawingGroup>
+							<DrawingGroup>
+								<DrawingGroup.Children>
+									<GeometryDrawing
+										Brush="#FF666666">
+										<GeometryDrawing.Geometry>
+											<RectangleGeometry
+												RadiusX="0"
+												RadiusY="0"
+												Rect="11,11,6,3" />
+										</GeometryDrawing.Geometry>
+									</GeometryDrawing>
+									<GeometryDrawing
+										Brush="#FF666666">
+										<GeometryDrawing.Geometry>
+											<PathGeometry
+												FillRule="Nonzero"
+												Figures="M16,12L16,13 12,13 12,12 16,12 M17,10L11,10C10.4,10,10,10.4,10,11L10,14C10,14.6,10.4,15,11,15L17,15C17.6,15,18,14.6,18,14L18,11C18,10.4,17.6,10,17,10L17,10z" />
+										</GeometryDrawing.Geometry>
+									</GeometryDrawing>
+								</DrawingGroup.Children>
+							</DrawingGroup>
+							<GeometryDrawing
+								Brush="{x:Null}">
+								<GeometryDrawing.Pen>
+									<Pen
+										Brush="#FF666666"
+										Thickness="2"
+										StartLineCap="Round"
+										EndLineCap="Round"
+										LineJoin="Round"
+										MiterLimit="1" />
+								</GeometryDrawing.Pen>
+								<GeometryDrawing.Geometry>
+									<PathGeometry
+										FillRule="Nonzero"
+										Figures="M24,27L0,27 0,18 9,6.1" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.BulbOn">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="Nonzero"
+								Figures="M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<DrawingGroup>
+						<DrawingGroup.Children>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Geometry>
+									<PathGeometry
+										FillRule="Nonzero"
+										Figures="M16,9C19.3,9 22,11.7 22,15 22,17.1 20.8,19.1 19,20.2L18,20.8 18,22 18,26.1 14,26.1 14,22 14,20.8 13,20.2C11.1,19.1 10,17.1 10,15 10,11.7 12.7,9 16,9 M16,7C11.6,7 8,10.6 8,15 8,18 9.6,20.5 12,21.9L12,26C12,27.1,12.9,28,14,28L18,28C19.1,28,20,27.1,20,26L20,21.9C22.4,20.5 24,17.9 24,15 24,10.6 20.4,7 16,7L16,7z" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+					<GeometryDrawing
+						Brush="#FF666666">
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="Nonzero"
+								Figures="M13,29L19,29C19.6,29,20,29.4,20,30L20,30C20,30.6,19.6,31,19,31L13,31C12.4,31,12,30.6,12,30L12,30C12,29.4,12.4,29,13,29z" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FF666666">
+						<GeometryDrawing.Geometry>
+							<RectangleGeometry
+								RadiusX="0"
+								RadiusY="0"
+								Rect="12.8,22,6.5,2" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="{x:Null}">
+						<GeometryDrawing.Pen>
+							<Pen
+								Brush="#FF666666"
+								Thickness="2"
+								StartLineCap="Round"
+								EndLineCap="Round"
+								LineJoin="Round"
+								MiterLimit="1" />
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="Nonzero"
+								Figures="M16.2,12C16.2,12 14.8,12.1 14.1,13.4 13.4,14.7 13.6,16.1 13.6,16.1" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FF666666">
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="Nonzero"
+								Figures="M15,2C15,1.4 15.4,1 16,1 16.6,1 17,1.4 17,2L17,4C17,4.6 16.6,5 16,5 15.4,5 15,4.6 15,4L15,2z M24.5,5.1C24.9,4.7 25.5,4.7 25.9,5.1 26.3,5.5 26.3,6.1 25.9,6.5L24.5,7.9C24.1,8.3 23.5,8.3 23.1,7.9 22.7,7.5 22.7,6.9 23.1,6.5L24.5,5.1z M29,14C29.6,14 30,14.4 30,15 30,15.6 29.6,16 29,16L27,16C26.4,16 26,15.6 26,15 26,14.4 26.4,14 27,14L29,14z M25.9,23.5C26.3,23.9 26.3,24.5 25.9,24.9 25.5,25.3 24.9,25.3 24.5,24.9L23.1,23.5C22.7,23.1 22.7,22.5 23.1,22.1 23.5,21.7 24.1,21.7 24.5,22.1L25.9,23.5z M7.5,24.9C7.1,25.3 6.5,25.3 6.1,24.9 5.7,24.5 5.7,23.9 6.1,23.5L7.5,22.1C7.9,21.7 8.5,21.7 8.9,22.1 9.3,22.5 9.3,23.1 8.9,23.5L7.5,24.9z M3,16C2.4,16 2,15.6 2,15 2,14.4 2.4,14 3,14L5,14C5.6,14 6,14.4 6,15 6,15.6 5.6,16 5,16L3,16z M6.1,6.5C5.7,6.1 5.7,5.5 6.1,5.1 6.5,4.7 7.1,4.7 7.5,5.1L8.9,6.5C9.3,6.9 9.3,7.5 8.9,7.9 8.5,8.3 7.9,8.3 7.5,7.9L6.1,6.5z" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.BulbOff">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing>
+						<GeometryDrawing.Brush>
+							<SolidColorBrush
+								Color="#FFD8D8D8"
+								Opacity="0" />
+						</GeometryDrawing.Brush>
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="Nonzero"
+								Figures="M31,31L32,31 32,32 31,32 31,31z M0,0L1,0 1,1 0,1 0,0z" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<DrawingGroup
+						Transform="1,0,0,1,8,7">
+						<DrawingGroup.Children>
+							<DrawingGroup>
+								<DrawingGroup.Children>
+									<GeometryDrawing
+										Brush="#FF666666">
+										<GeometryDrawing.Geometry>
+											<PathGeometry
+												FillRule="Nonzero"
+												Figures="M8,2C11.3,2 14,4.7 14,8 14,10.1 12.8,12.1 11,13.2L10,13.8 10,15 10,19.1 6,19.1 6,15 6,13.8 5,13.2C3.2,12.1 2,10.1 2,8 2,4.7 4.7,2 8,2 M8,0C3.6,0 0,3.6 0,8 0,11 1.6,13.5 4,14.9L4,19C4,20.1,4.9,21,6,21L10,21C11.1,21,12,20.1,12,19L12,14.9C14.4,13.5 16,10.9 16,8 16,3.6 12.4,0 8,0L8,0z" />
+										</GeometryDrawing.Geometry>
+									</GeometryDrawing>
+								</DrawingGroup.Children>
+							</DrawingGroup>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Geometry>
+									<PathGeometry
+										FillRule="Nonzero"
+										Figures="M5,22L11,22C11.6,22,12,22.4,12,23L12,23C12,23.6,11.6,24,11,24L5,24C4.4,24,4,23.6,4,23L4,23C4,22.4,4.4,22,5,22z" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="#FF666666">
+								<GeometryDrawing.Geometry>
+									<RectangleGeometry
+										RadiusX="0"
+										RadiusY="0"
+										Rect="4.8,15,6.5,2" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+							<GeometryDrawing
+								Brush="{x:Null}">
+								<GeometryDrawing.Pen>
+									<Pen
+										Brush="#FF666666"
+										Thickness="2"
+										StartLineCap="Round"
+										EndLineCap="Round"
+										LineJoin="Round"
+										MiterLimit="1" />
+								</GeometryDrawing.Pen>
+								<GeometryDrawing.Geometry>
+									<PathGeometry
+										FillRule="Nonzero"
+										Figures="M8.2,5C8.2,5 6.8,5.1 6.1,6.4 5.4,7.7 5.6,9.1 5.6,9.1" />
+								</GeometryDrawing.Geometry>
+							</GeometryDrawing>
+						</DrawingGroup.Children>
+					</DrawingGroup>
+				</DrawingGroup.Children>
+				<DrawingGroup.ClipGeometry>
+					<RectangleGeometry
+						Rect="0,0,32,32" />
+				</DrawingGroup.ClipGeometry>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.RecommendationNormal">
+		<DrawingImage.Drawing>
+			<DrawingGroup
+				Transform="1,0,0,1,2.5,2">
+				<DrawingGroup.Children>
+					<GeometryDrawing
+						Brush="{x:Null}">
+						<GeometryDrawing.Pen>
+							<Pen
+								Brush="#FF666666"
+								Thickness="2"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter" />
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M0,11.9933977C0,11.4447593,0.347718596,10.7057766,0.764675448,10.3529669L12.6249552,0.317345619C12.8320867,0.142080473,13.1770117,0.139080644,13.389052,0.305683717L26.2071865,10.3770751C26.6450453,10.721107,27,11.4449463,27,11.9933977L27,28.0066023C27,28.5552407,26.5538914,29,26.0070346,29L0.992965445,29C0.444565773,29,0,28.5550537,0,28.0066023L0,11.9933977z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FF60BE5F">
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M4,4.9955775C4,4.44573523,4.45092539,4,4.99477117,4L22.0052288,4C22.5546258,4,23,4.44483697,23,4.9955775L23,15 15.1115455,20.8125454C14.2215135,21.4683585,12.785956,21.4738623,11.8884545,20.8125454L4,15 4,4.9955775z M9,9C9,9.55613518,9.44661595,10,9.99754465,10L17.0024554,10C17.5536886,10 18,9.55228475 18,9 18,8.44386482 17.553384,8 17.0024554,8L9.99754465,8C9.4463114,8,9,8.44771525,9,9z M9,13C9,13.5561352,9.44661595,14,9.99754465,14L17.0024554,14C17.5536886,14 18,13.5522847 18,13 18,12.4438648 17.553384,12 17.0024554,12L9.99754465,12C9.4463114,12,9,12.4477153,9,13z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FF666666">
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M21,16.4736842L23,15 23,4.9955775C23,4.44483697,22.5546258,4,22.0052288,4L4.99477117,4C4.45092539,4,4,4.44573523,4,4.9955775L4,15 6,16.4736842 6,6 21,6 21,16.4736842z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="{x:Null}">
+						<GeometryDrawing.Pen>
+							<Pen
+								Brush="#FF666666"
+								Thickness="2"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter" />
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M27,12L14.3040576,21.4044018C13.8599888,21.7333416,13.1389076,21.7325242,12.6959424,21.4044018L0,12</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<DrawingImage
+		x:Key="ImageSource.RecommendationPressed">
+		<DrawingImage.Drawing>
+			<DrawingGroup
+				Transform="1,0,0,1,2.5,2">
+				<DrawingGroup.Children>
+					<GeometryDrawing
+						Brush="#FF666666">
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M0.252317804,11.0449614C0.388696477,10.7689887,0.569066747,10.518482,0.764675448,10.3529669L12.6249552,0.317345619C12.8320867,0.142080473,13.1770117,0.139080644,13.389052,0.305683717L26.2071865,10.3770751C26.4117672,10.5378171,26.5982497,10.7814725,26.7388852,11.0514125L13.7151015,20.6021872C13.6194143,20.6723578,13.3811046,20.6727383,13.2848985,20.6021872L0.252317804,11.0449614z M27,13.3400717L27,28.0066023C27,28.5552407,26.5538914,29,26.0070346,29L0.992965445,29C0.444565773,29,-1.77635684E-15,28.5550537,-1.77635684E-15,28.0066023L-1.77635684E-15,13.3400717 12.1021712,22.2149972C12.9034038,22.8025678,14.0991998,22.8006585,14.8978288,22.2149972L27,13.3400717z M9,9C9,9.55613518,9.44661595,10,9.99754465,10L17.0024554,10C17.5536886,10 18,9.55228475 18,9 18,8.44386482 17.553384,8 17.0024554,8L9.99754465,8C9.4463114,8,9,8.44771525,9,9z M9,13C9,13.5561352,9.44661595,14,9.99754465,14L17.0024554,14C17.5536886,14 18,13.5522847 18,13 18,12.4438648 17.553384,12 17.0024554,12L9.99754465,12C9.4463114,12,9,12.4477153,9,13z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FF60BE5F">
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M5,5.99501921C5,5.44548527,5.45470893,5,5.9999602,5L21.0000398,5C21.5523026,5,22,5.44969075,22,5.99501921L22,13.8235294 13.5,20 5,13.8235294 5,5.99501921z M9,9C9,9.55613518,9.44661595,10,9.99754465,10L17.0024554,10C17.5536886,10 18,9.55228475 18,9 18,8.44386482 17.553384,8 17.0024554,8L9.99754465,8C9.4463114,8,9,8.44771525,9,9z M9,13C9,13.5561352,9.44661595,14,9.99754465,14L17.0024554,14C17.5536886,14 18,13.5522847 18,13 18,12.4438648 17.553384,12 17.0024554,12L9.99754465,12C9.4463114,12,9,12.4477153,9,13z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FF666666">
+						<GeometryDrawing.Geometry>
+							<PathGeometry
+								FillRule="Nonzero"
+								Figures="M6,6L6,12.6999998 13.5,18.2000008 21,12.6999998 21,6 6,6z M4,4.99539757C4,4.44565467,4.45092539,4,4.99477117,4L22.0052288,4C22.5546258,4,23,4.4556644,23,4.99539757L23,13.6999998 14.3099647,20.1031846C13.8626335,20.4327971,13.1391892,20.4341402,12.6900353,20.1031846L4,13.6999998 4,4.99539757z" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<BitmapImage
+		UriSource="pack://application:,,,/PPTService;component/Images_/Seewo.png"
+		x:Key="Image.Seewo" />
+	<BitmapImage
+		UriSource="pack://application:,,,/PPTService;component/Images_/DownloadEn5.png"
+		x:Key="Image.DownloadEn5" />
+	<BitmapImage
+		UriSource="pack://application:,,,/PPTService;component/Images_/RightArrow.png"
+		x:Key="Image.RightArrow" />
+	<BitmapImage
+		UriSource="pack://application:,,,/PPTService;component/Images_/CloseButtonNormal.png"
+		x:Key="Image.CloseButtonNormal" />
+	<BitmapImage
+		UriSource="pack://application:,,,/PPTService;component/Images_/CloseButtonPressed.png"
+		x:Key="Image.CloseButtonPressed" />
+</ResourceDictionary>

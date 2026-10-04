@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{DBAA3DA1-E19A-4A5E-80AE-74FB8DA5170F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PPTService</RootNamespace>
+    <AssemblyName>PPTService</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>PPTService.ico</ApplicationIcon>
+    <StartupObject>PPTService.App</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cvte.Mcu">
+      <HintPath>..\..\..\Program Files (x86)\Seewo\PPTService\Main\Cvte.Mcu.dll</HintPath>
+    </Reference>
+    <Reference Include="Cvte.WebService">
+      <HintPath>..\..\..\Program Files (x86)\Seewo\PPTService\Main\Cvte.WebService.dll</HintPath>
+    </Reference>
+    <Reference Include="Cvte.Windows.cc">
+      <HintPath>..\..\..\Program Files (x86)\Seewo\PPTService\Main\Cvte.Windows.cc.dll</HintPath>
+    </Reference>
+    <Reference Include="PPTService.Collection">
+      <HintPath>..\..\..\Program Files (x86)\Seewo\PPTService\Main\PPTService.Collection.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity">
+      <HintPath>..\..\..\Program Files (x86)\Seewo\PPTService\Main\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="Microsoft.Expression.Interactions">
+      <HintPath>..\..\..\Program Files (x86)\Seewo\PPTService\Main\Microsoft.Expression.Interactions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdaptiveTrigger.cs" />
+    <Compile Include="AnalyzeRate.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AppPath.cs" />
+    <Compile Include="AttachedViewModelBase.cs" />
+    <Compile Include="AutoUpdater.cs" />
+    <Compile Include="BottomArea.cs" />
+    <Compile Include="CircularProgressBarViewModel.cs" />
+    <Compile Include="ConfigController.cs" />
+    <Compile Include="ConfigHelper.cs" />
+    <Compile Include="ControlHelper.cs" />
+    <Compile Include="DeviceInput.cs" />
+    <Compile Include="Digcf.cs" />
+    <Compile Include="DispatcherTask.cs" />
+    <Compile Include="ExploreHelper.cs" />
+    <Compile Include="GarbageCollection.cs" />
+    <Compile Include="Gesture.cs" />
+    <Compile Include="GetWindowCmd.cs" />
+    <Compile Include="HiddAttributes.cs" />
+    <Compile Include="HidpCaps.cs" />
+    <Compile Include="ImageButton.cs" />
+    <Compile Include="ImageConvertExtensions.cs" />
+    <Compile Include="IniSetting.cs" />
+    <Compile Include="IniUtility.cs" />
+    <Compile Include="InnerBoardWindow.cs" />
+    <Compile Include="InteropExtension.cs" />
+    <Compile Include="LeftArea.cs" />
+    <Compile Include="LeftBottomArea.cs" />
+    <Compile Include="LinqToVisualTree\EnumerableTreeExtensions.cs" />
+    <Compile Include="LinqToVisualTree\ILinqTree.cs" />
+    <Compile Include="LinqToVisualTree\TreeExtensions.cs" />
+    <Compile Include="LinqToVisualTree\VisualTreeAdapter.cs" />
+    <Compile Include="Loading.cs" />
+    <Compile Include="LoadingView.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="LongExtension.cs" />
+    <Compile Include="Magnifier.cs" />
+    <Compile Include="MainWindow.cs" />
+    <Compile Include="McuService.cs" />
+    <Compile Include="Md5SecurityUtility.cs" />
+    <Compile Include="MessageWindow.cs" />
+    <Compile Include="Microsoft\Office\Core\MsoTriState.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\Application.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\Collection.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\ColorFormat.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\EApplication.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\EApplication_Event.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\EApplication_PresentationCloseFinalEventHandler.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\EApplication_SlideShowBeginEventHandler.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\EApplication_SlideShowEndEventHandler.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\EApplication_SlideShowNextSlideEventHandler.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\Master.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\MasterEvents.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\MasterEvents_Event.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\PpSlideShowPointerType.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\PpSlideShowRangeType.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\PpSlideShowType.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\Presentation.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\Presentations.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\PresEvents.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\PresEvents_Event.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\SldEvents.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\SldEvents_Event.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\Slide.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\Slides.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\SlideShowSettings.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\SlideShowTransition.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\SlideShowView.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\SlideShowWindow.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\SlideShowWindows.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\_Application.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\_Master.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\_Presentation.cs" />
+    <Compile Include="Microsoft\Office\Interop\PowerPoint\_Slide.cs" />
+    <Compile Include="MouseHelper.cs" />
+    <Compile Include="MouseHelperEventArgs.cs" />
+    <Compile Include="MousePoint.cs" />
+    <Compile Include="NetworkHelper.cs" />
+    <Compile Include="PiePiece.cs" />
+    <Compile Include="PointExtensions.cs" />
+    <Compile Include="PointUtils.cs" />
+    <Compile Include="PptAnalyzer.cs" />
+    <Compile Include="PptOperator.cs" />
+    <Compile Include="PptSharer.cs" />
+    <Compile Include="ProcessHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PropertyChangeNotifier.cs" />
+    <Compile Include="QrWindow.cs" />
+    <Compile Include="RecommendationWindow.cs" />
+    <Compile Include="RegexHelper.cs" />
+    <Compile Include="ReleaseMemoryImageHelper.cs" />
+    <Compile Include="Restart.cs" />
+    <Compile Include="RightArea.cs" />
+    <Compile Include="RightBottomArea.cs" />
+    <Compile Include="ScreenExtensions.cs" />
+    <Compile Include="ScreenHelper.cs" />
+    <Compile Include="SegmentedProgressBarViewModel.cs" />
+    <Compile Include="SlideItem.cs" />
+    <Compile Include="Snapshot.cs" />
+    <Compile Include="SyntacticSugar.cs" />
+    <Compile Include="UpdateWindow.cs" />
+    <Compile Include="ViewHelper.cs" />
+    <Compile Include="WindowRect.cs" />
+    <Compile Include="WindowsApi.cs" />
+    <Compile Include="WindowStateHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="images_\images.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="style_\buttonstyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="style_\checkboxstyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="style_\ellipsestyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="style_\listboxstyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="style_\progressbarstyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="style_\radiobuttonstyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="style_\windowstyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="themes\generic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="themes\generic\imagebutton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view_\bottomarea.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view_\innerboardwindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view_\leftarea.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view_\leftbottomarea.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view_\loadingview.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view_\magnifier.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view_\mainwindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view_\messagewindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view_\qrwindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view_\recommendationwindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view_\rightarea.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view_\rightbottomarea.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="view_\updatewindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images_\closebuttonnormal.png" />
+    <Resource Include="images_\closebuttonpressed.png" />
+    <Resource Include="images_\downloaden5.png" />
+    <Resource Include="images_\pptservice.ico" />
+    <Resource Include="images_\rightarrow.png" />
+    <Resource Include="images_\seewo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

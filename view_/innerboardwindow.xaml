@@ -1,0 +1,290 @@
+<Window
+	x:Class="PPTService.InnerBoardWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:pptService="clr-namespace:PPTService" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
+	WindowStartupLocation="CenterScreen"
+	Style="{DynamicResource Style.Window}"
+	Width="1"
+	Height="1">
+	<FrameworkElement.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary
+					Source="pack://application:,,,/PPTService;component/Style_/WindowStyle.xaml" />
+				<ResourceDictionary
+					Source="pack://application:,,,/PPTService;component/Images_/Images.xaml" />
+			</ResourceDictionary.MergedDictionaries>
+			<Storyboard
+				x:Key="ShowStoryBoard">
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(TranslateTransform.Y)"
+					Storyboard.TargetName="RootGrid"
+					Completed="ShowStoryBoard_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="-900" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.3"
+						Value="0">
+						<EasingDoubleKeyFrame.EasingFunction>
+							<CircleEase
+								EasingMode="EaseOut" />
+						</EasingDoubleKeyFrame.EasingFunction>
+					</EasingDoubleKeyFrame>
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="HiddenStoryBoard">
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(TranslateTransform.Y)"
+					Storyboard.TargetName="RootGrid"
+					Completed="HiddenStoryBoard_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="-900">
+						<EasingDoubleKeyFrame.EasingFunction>
+							<CircleEase
+								EasingMode="EaseIn" />
+						</EasingDoubleKeyFrame.EasingFunction>
+					</EasingDoubleKeyFrame>
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.3"
+						Value="-5000" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+		</ResourceDictionary>
+	</FrameworkElement.Resources>
+	<Grid
+		Name="RootGrid"
+		Margin="60 0 60 120">
+		<Grid.RowDefinitions>
+			<RowDefinition
+				Height="*" />
+			<RowDefinition
+				Height="Auto" />
+		</Grid.RowDefinitions>
+		<UIElement.RenderTransform>
+			<TransformGroup>
+				<TranslateTransform
+					Y="-5000" />
+			</TransformGroup>
+		</UIElement.RenderTransform>
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup
+				x:Name="AdaptiveStates">
+				<VisualState
+					x:Name="Adaptive0">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames
+							Storyboard.TargetName="RootGrid"
+							Storyboard.TargetProperty="Margin">
+							<DiscreteObjectKeyFrame
+								KeyTime="0">
+								<ObjectKeyFrame.Value>
+									<Thickness>45 0 45 90</Thickness>
+								</ObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames
+							Storyboard.TargetName="CloseBorder"
+							Storyboard.TargetProperty="(FrameworkElement.Height)">
+							<EasingDoubleKeyFrame
+								KeyTime="0"
+								Value="20" />
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames
+							Storyboard.TargetName="CloseImage"
+							Storyboard.TargetProperty="(FrameworkElement.Height)">
+							<EasingDoubleKeyFrame
+								KeyTime="0"
+								Value="7" />
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames
+							Storyboard.TargetName="SlideIndexButtonBorder"
+							Storyboard.TargetProperty="(FrameworkElement.Height)">
+							<EasingDoubleKeyFrame
+								KeyTime="0"
+								Value="30" />
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames
+							Storyboard.TargetName="SlideIndexButtonBorder"
+							Storyboard.TargetProperty="(FrameworkElement.Width)">
+							<EasingDoubleKeyFrame
+								KeyTime="0"
+								Value="90" />
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames
+							Storyboard.TargetName="Index"
+							Storyboard.TargetProperty="FontSize">
+							<EasingDoubleKeyFrame
+								KeyTime="0"
+								Value="9" />
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames
+							Storyboard.TargetName="SlideIndexButtonBorder"
+							Storyboard.TargetProperty="CornerRadius">
+							<DiscreteObjectKeyFrame
+								KeyTime="0">
+								<ObjectKeyFrame.Value>
+									<CornerRadius>3</CornerRadius>
+								</ObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState
+					x:Name="Adaptive1440" />
+				<VisualState
+					x:Name="Adaptive3800">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames
+							Storyboard.TargetName="RootGrid"
+							Storyboard.TargetProperty="Margin">
+							<DiscreteObjectKeyFrame
+								KeyTime="0">
+								<ObjectKeyFrame.Value>
+									<Thickness>120 0 120 240</Thickness>
+								</ObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames
+							Storyboard.TargetName="CloseBorder"
+							Storyboard.TargetProperty="(FrameworkElement.Height)">
+							<EasingDoubleKeyFrame
+								KeyTime="0"
+								Value="50" />
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames
+							Storyboard.TargetName="CloseImage"
+							Storyboard.TargetProperty="(FrameworkElement.Height)">
+							<EasingDoubleKeyFrame
+								KeyTime="0"
+								Value="20" />
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames
+							Storyboard.TargetName="SlideIndexButtonBorder"
+							Storyboard.TargetProperty="(FrameworkElement.Height)">
+							<EasingDoubleKeyFrame
+								KeyTime="0"
+								Value="100" />
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames
+							Storyboard.TargetName="SlideIndexButtonBorder"
+							Storyboard.TargetProperty="(FrameworkElement.Width)">
+							<EasingDoubleKeyFrame
+								KeyTime="0"
+								Value="300" />
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames
+							Storyboard.TargetName="Index"
+							Storyboard.TargetProperty="FontSize">
+							<EasingDoubleKeyFrame
+								KeyTime="0"
+								Value="30" />
+						</DoubleAnimationUsingKeyFrames>
+						<ObjectAnimationUsingKeyFrames
+							Storyboard.TargetName="SlideIndexButtonBorder"
+							Storyboard.TargetProperty="CornerRadius">
+							<DiscreteObjectKeyFrame
+								KeyTime="0">
+								<ObjectKeyFrame.Value>
+									<CornerRadius>12</CornerRadius>
+								</ObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
+		<i:Interaction.Triggers>
+			<pptService:AdaptiveTrigger
+				MinWindowWidth="0">
+				<ei:GoToStateAction
+					StateName="Adaptive0" />
+			</pptService:AdaptiveTrigger>
+			<pptService:AdaptiveTrigger
+				MinWindowWidth="1440">
+				<ei:GoToStateAction
+					StateName="Adaptive1440" />
+			</pptService:AdaptiveTrigger>
+			<pptService:AdaptiveTrigger
+				MinWindowWidth="3800">
+				<ei:GoToStateAction
+					StateName="Adaptive3800" />
+			</pptService:AdaptiveTrigger>
+		</i:Interaction.Triggers>
+		<Border
+			Name="InkCanvasBorder"
+			Grid.Row="0"
+			Margin="20 0 20 0"
+			Background="#FFFFFFFF"
+			BorderThickness="1"
+			BorderBrush="#80666666">
+			<Grid>
+				<InkCanvas
+					Name="InkCanvas"
+					EditingMode="Ink"
+					Background="#00FFFFFF" />
+				<Border
+					Name="SlideIndexButtonBorder"
+					Height="50"
+					Width="150"
+					CornerRadius="6"
+					Margin="10"
+					BorderThickness="1"
+					Background="#FFFFFFFF"
+					BorderBrush="#80666666"
+					VerticalAlignment="Bottom"
+					HorizontalAlignment="Right">
+					<Grid>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition />
+							<ColumnDefinition />
+							<ColumnDefinition />
+						</Grid.ColumnDefinitions>
+						<pptService:ImageButton
+							x:Name="Previous"
+							Click="Previous_Click"
+							Grid.Column="0"
+							NormalSource="{StaticResource ImageSource.HPreviousSlideNormal}"
+							PressedSource="{StaticResource ImageSource.HPreviousSlideSelected}" />
+						<TextBlock
+							Name="Index"
+							Grid.Column="1"
+							Text="1/1"
+							HorizontalAlignment="Center"
+							VerticalAlignment="Center"
+							FontSize="16"
+							Foreground="#666666" />
+						<pptService:ImageButton
+							x:Name="Add"
+							Click="Next_OnClick"
+							Grid.Column="2"
+							Visibility="Visible"
+							NormalSource="{StaticResource ImageSource.AddSlideNormal}"
+							PressedSource="{StaticResource ImageSource.AddSlideSelected}" />
+						<pptService:ImageButton
+							x:Name="Next"
+							Click="Next_OnClick"
+							Grid.Column="2"
+							Visibility="Collapsed"
+							NormalSource="{StaticResource ImageSource.HNextSlideNormal}"
+							PressedSource="{StaticResource ImageSource.HNextSlideSelected}" />
+					</Grid>
+				</Border>
+			</Grid>
+		</Border>
+		<Border
+			Name="CloseBorder"
+			Grid.Row="1"
+			Height="30"
+			Background="#505050"
+			CornerRadius="4"
+			Margin="0 -1 0 0">
+			<Image
+				Name="CloseImage"
+				Height="10"
+				Source="{StaticResource ImageSource.CloseInnerBoard}"
+				Stretch="Uniform"
+				VerticalAlignment="Center" />
+		</Border>
+	</Grid>
+</Window>

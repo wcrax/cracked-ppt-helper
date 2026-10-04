@@ -1,0 +1,161 @@
+<Window
+	x:Class="PPTService.RecommendationWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Background="#00FFFFFF"
+	AllowsTransparency="True"
+	ShowInTaskbar="False"
+	WindowStyle="None"
+	WindowStartupLocation="CenterOwner"
+	UseLayoutRounding="True"
+	SnapsToDevicePixels="True" xmlns:pptservice="clr-namespace:PPTService">
+	<FrameworkElement.Triggers>
+		<EventTrigger
+			RoutedEvent="Window.Loaded">
+			<BeginStoryboard>
+				<Storyboard>
+					<DoubleAnimation
+						Storyboard.TargetName="RootGrid"
+						Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleX)"
+						To="1"
+						Duration="0:0:0.3">
+						<DoubleAnimation.EasingFunction>
+							<CircleEase
+								EasingMode="EaseOut" />
+						</DoubleAnimation.EasingFunction>
+					</DoubleAnimation>
+					<DoubleAnimation
+						Storyboard.TargetName="RootGrid"
+						Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleY)"
+						To="1"
+						Duration="0:0:0.3">
+						<DoubleAnimation.EasingFunction>
+							<CircleEase
+								EasingMode="EaseOut" />
+						</DoubleAnimation.EasingFunction>
+					</DoubleAnimation>
+				</Storyboard>
+			</BeginStoryboard>
+		</EventTrigger>
+	</FrameworkElement.Triggers>
+	<FrameworkElement.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary
+					Source="pack://application:,,,/PPTService;component/Images_/Images.xaml" />
+				<ResourceDictionary
+					Source="pack://application:,,,/PPTService;component/Style_/ButtonStyle.xaml" />
+				<ResourceDictionary
+					Source="pack://application:,,,/PPTService;component/Style_/CheckBoxStyle.xaml" />
+				<ResourceDictionary
+					Source="pack://application:,,,/PPTService;component/Style_/RadioButtonStyle.xaml" />
+			</ResourceDictionary.MergedDictionaries>
+			<Storyboard
+				x:Key="Storyboard.Shake">
+				<DoubleAnimation
+					Storyboard.TargetName="RootGrid"
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleX)"
+					To="0.9"
+					Duration="0:0:0.1" />
+				<DoubleAnimation
+					Storyboard.TargetName="RootGrid"
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleY)"
+					To="0.9"
+					Duration="0:0:0.1" />
+				<DoubleAnimation
+					Storyboard.TargetName="RootGrid"
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleX)"
+					To="1"
+					Duration="0:0:0.2" />
+				<DoubleAnimation
+					Storyboard.TargetName="RootGrid"
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleY)"
+					To="1"
+					Duration="0:0:0.2" />
+			</Storyboard>
+		</ResourceDictionary>
+	</FrameworkElement.Resources>
+	<Grid
+		Name="RootGrid"
+		RenderTransformOrigin="0.5,0.5">
+		<UIElement.RenderTransform>
+			<ScaleTransform
+				ScaleX="0"
+				ScaleY="0" />
+		</UIElement.RenderTransform>
+		<Button
+			Style="{StaticResource NoButtonStyle}"
+			Click="BackgroundButton_OnClick" />
+		<Viewbox
+			MaxWidth="949"
+			MaxHeight="540">
+			<Grid
+				HorizontalAlignment="Center"
+				VerticalAlignment="Center">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition />
+					<ColumnDefinition />
+				</Grid.ColumnDefinitions>
+				<Grid
+					Column="0">
+					<Image
+						Source="{StaticResource Image.DownloadEn5}"
+						Stretch="Uniform"
+						UseLayoutRounding="True"
+						SnapsToDevicePixels="True" />
+					<Button
+						Style="{StaticResource Style.DownloadButton}"
+						Width="240"
+						Height="60"
+						HorizontalAlignment="Left"
+						VerticalAlignment="Top"
+						Margin="486 300 0 0"
+						Content="我想试试"
+						Click="DownloadButton_OnClick" />
+					<Grid
+						Margin="40 0 30 30"
+						VerticalAlignment="Bottom">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition />
+							<ColumnDefinition />
+						</Grid.ColumnDefinitions>
+						<StackPanel
+							Grid.Column="0"
+							Orientation="Horizontal">
+							<Button
+								Style="{StaticResource Style.LinkButton}"
+								Content="更多信息化培训课程"
+								Click="MoreInfoButton_OnClick" />
+							<Button
+								Style="{StaticResource Style.LinkButton}"
+								Content="教育信息化交流社区"
+								Margin="20 0 0 0"
+								Click="EducationInfoButton_OnClick" />
+						</StackPanel>
+						<StackPanel
+							Grid.Column="1"
+							Orientation="Horizontal"
+							HorizontalAlignment="Right"
+							VerticalAlignment="Bottom"
+							Opacity="0.6">
+							<TextBlock
+								Text="希沃PPT小助手，版本："
+								Foreground="#FFFFFFFF"
+								FontSize="12" />
+							<TextBlock
+								Name="VersionTextBlock"
+								Foreground="#FFFFFFFF"
+								FontSize="12" />
+						</StackPanel>
+					</Grid>
+				</Grid>
+				<Button
+					Grid.Column="1"
+					Style="{StaticResource Style.DownloadWindowCloseButton}"
+					Width="44"
+					Height="44"
+					VerticalAlignment="Top"
+					Margin="5 -7 0 0"
+					Click="CloseButton_OnClick" />
+			</Grid>
+		</Viewbox>
+	</Grid>
+</Window>

@@ -1,0 +1,1314 @@
+<Window
+	x:Class="PPTService.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:pptService="clr-namespace:PPTService" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
+	Opacity="0"
+	PreviewMouseLeftButtonUp="Window_PreviewMouseLeftButtonUp"
+	PreviewMouseMove="Window_PreviewMouseMove"
+	WindowStartupLocation="Manual"
+	Style="{DynamicResource Style.Window}"
+	Width="1"
+	Height="1">
+	<FrameworkElement.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary
+					Source="pack://application:,,,/PPTService;component/Style_/WindowStyle.xaml" />
+				<ResourceDictionary
+					Source="pack://application:,,,/PPTService;component/Style_/ButtonStyle.xaml" />
+				<ResourceDictionary
+					Source="pack://application:,,,/PPTService;component/Style_/ListBoxStyle.xaml" />
+				<ResourceDictionary
+					Source="pack://application:,,,/PPTService;component/Images_/Images.xaml" />
+			</ResourceDictionary.MergedDictionaries>
+			<Storyboard
+				x:Key="ShowLeftSlideManagerViewStoryboard0">
+				<ThicknessAnimationUsingKeyFrames
+					Storyboard.TargetName="LeftSlideManagerViewGrid"
+					Storyboard.TargetProperty="Margin">
+					<EasingThicknessKeyFrame
+						KeyTime="0"
+						Value="20 10 0 10" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.2"
+						Value="60 10 0 10" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.4"
+						Value="40 10 0 10" />
+				</ThicknessAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="LeftSlideManagerViewGrid"
+					Completed="ShowLeftSlideManagerView_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.2" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="LeftSlideManagerViewGrid">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="ShowLeftSlideManagerViewStoryboard1440">
+				<ThicknessAnimationUsingKeyFrames
+					Storyboard.TargetName="LeftSlideManagerViewGrid"
+					Storyboard.TargetProperty="Margin">
+					<EasingThicknessKeyFrame
+						KeyTime="0"
+						Value="30 10 0 10" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.2"
+						Value="90 10 0 10" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.4"
+						Value="60 10 0 10" />
+				</ThicknessAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="LeftSlideManagerViewGrid"
+					Completed="ShowLeftSlideManagerView_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.2" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="LeftSlideManagerViewGrid">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="ShowLeftSlideManagerViewStoryboard3800">
+				<ThicknessAnimationUsingKeyFrames
+					Storyboard.TargetName="LeftSlideManagerViewGrid"
+					Storyboard.TargetProperty="Margin">
+					<EasingThicknessKeyFrame
+						KeyTime="0"
+						Value="55 10 0 10" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.2"
+						Value="165 10 0 10" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.4"
+						Value="110 10 0 10" />
+				</ThicknessAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="LeftSlideManagerViewGrid"
+					Completed="ShowLeftSlideManagerView_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.2" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="LeftSlideManagerViewGrid">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="HiddenLeftSlideManagerViewStoryboard0">
+				<ThicknessAnimationUsingKeyFrames
+					Storyboard.TargetName="LeftSlideManagerViewGrid"
+					Storyboard.TargetProperty="Margin">
+					<EasingThicknessKeyFrame
+						KeyTime="0"
+						Value="40 10 0 10" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.2"
+						Value="60 10 0 10" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.4"
+						Value="20 10 0 10" />
+				</ThicknessAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="LeftSlideManagerViewGrid"
+					Completed="HiddenLeftSlideManagerView_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.2" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="LeftSlideManagerViewGrid">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="HiddenLeftSlideManagerViewStoryboard1440">
+				<ThicknessAnimationUsingKeyFrames
+					Storyboard.TargetName="LeftSlideManagerViewGrid"
+					Storyboard.TargetProperty="Margin">
+					<EasingThicknessKeyFrame
+						KeyTime="0"
+						Value="60 10 0 10" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.2"
+						Value="90 10 0 10" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.4"
+						Value="30 10 0 10" />
+				</ThicknessAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="LeftSlideManagerViewGrid"
+					Completed="HiddenLeftSlideManagerView_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.2" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="LeftSlideManagerViewGrid">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="HiddenLeftSlideManagerViewStoryboard3800">
+				<ThicknessAnimationUsingKeyFrames
+					Storyboard.TargetName="LeftSlideManagerViewGrid"
+					Storyboard.TargetProperty="Margin">
+					<EasingThicknessKeyFrame
+						KeyTime="0"
+						Value="110 10 0 10" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.2"
+						Value="165 10 0 10" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.4"
+						Value="55 10 0 10" />
+				</ThicknessAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="LeftSlideManagerViewGrid"
+					Completed="HiddenLeftSlideManagerView_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.2" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="LeftSlideManagerViewGrid">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="ShowRightSlideManagerViewStoryboard0">
+				<ThicknessAnimationUsingKeyFrames
+					Storyboard.TargetName="RightSlideManagerViewGrid"
+					Storyboard.TargetProperty="Margin">
+					<EasingThicknessKeyFrame
+						KeyTime="0"
+						Value="0 10 20 10" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0 10 60 10" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0 10 40 10" />
+				</ThicknessAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="RightSlideManagerViewGrid"
+					Completed="ShowRightSlideManagerView_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.2" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="RightSlideManagerViewGrid">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="ShowRightSlideManagerViewStoryboard1440">
+				<ThicknessAnimationUsingKeyFrames
+					Storyboard.TargetName="RightSlideManagerViewGrid"
+					Storyboard.TargetProperty="Margin">
+					<EasingThicknessKeyFrame
+						KeyTime="0"
+						Value="0 10 30 10" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0 10 90 10" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0 10 60 10" />
+				</ThicknessAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="RightSlideManagerViewGrid"
+					Completed="ShowRightSlideManagerView_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.2" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="RightSlideManagerViewGrid">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="ShowRightSlideManagerViewStoryboard3800">
+				<ThicknessAnimationUsingKeyFrames
+					Storyboard.TargetName="RightSlideManagerViewGrid"
+					Storyboard.TargetProperty="Margin">
+					<EasingThicknessKeyFrame
+						KeyTime="0"
+						Value="0 10 55 10" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0 10 165 10" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0 10 110 10" />
+				</ThicknessAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="RightSlideManagerViewGrid"
+					Completed="ShowRightSlideManagerView_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.2" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="RightSlideManagerViewGrid">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="HiddenRightSlideManagerViewStoryboard0">
+				<ThicknessAnimationUsingKeyFrames
+					Storyboard.TargetName="RightSlideManagerViewGrid"
+					Storyboard.TargetProperty="Margin">
+					<EasingThicknessKeyFrame
+						KeyTime="0"
+						Value="0 10 60 10" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0 10 40 10" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0 10 20 10" />
+				</ThicknessAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="RightSlideManagerViewGrid"
+					Completed="HiddenRightSlideManagerView_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.2" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="RightSlideManagerViewGrid">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="HiddenRightSlideManagerViewStoryboard1440">
+				<ThicknessAnimationUsingKeyFrames
+					Storyboard.TargetName="RightSlideManagerViewGrid"
+					Storyboard.TargetProperty="Margin">
+					<EasingThicknessKeyFrame
+						KeyTime="0"
+						Value="0 10 60 10" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0 10 90 10" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0 10 30 10" />
+				</ThicknessAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="RightSlideManagerViewGrid"
+					Completed="HiddenRightSlideManagerView_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.2" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="RightSlideManagerViewGrid">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="HiddenRightSlideManagerViewStoryboard3800">
+				<ThicknessAnimationUsingKeyFrames
+					Storyboard.TargetName="RightSlideManagerViewGrid"
+					Storyboard.TargetProperty="Margin">
+					<EasingThicknessKeyFrame
+						KeyTime="0"
+						Value="0 10 110 10" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0 10 165 10" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0 10 55 10" />
+				</ThicknessAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="RightSlideManagerViewGrid"
+					Completed="HiddenRightSlideManagerView_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.2" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="RightSlideManagerViewGrid">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="ShowLeftBottomSlideManagerViewStoryboard0">
+				<ThicknessAnimationUsingKeyFrames
+					Storyboard.TargetName="LeftSlideManagerViewGrid"
+					Storyboard.TargetProperty="Margin">
+					<EasingThicknessKeyFrame
+						KeyTime="0"
+						Value="0 10 0 15" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0 10 0 25" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0 10 0 40" />
+				</ThicknessAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="LeftSlideManagerViewGrid"
+					Completed="ShowLeftSlideManagerView_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.2" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="LeftSlideManagerViewGrid">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="ShowLeftBottomSlideManagerViewStoryboard1440">
+				<ThicknessAnimationUsingKeyFrames
+					Storyboard.TargetName="LeftSlideManagerViewGrid"
+					Storyboard.TargetProperty="Margin">
+					<EasingThicknessKeyFrame
+						KeyTime="0"
+						Value="0 10 0 20" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0 10 0 40" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0 10 0 70" />
+				</ThicknessAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="LeftSlideManagerViewGrid"
+					Completed="ShowLeftSlideManagerView_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.2" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="LeftSlideManagerViewGrid">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="ShowLeftBottomSlideManagerViewStoryboard3800">
+				<ThicknessAnimationUsingKeyFrames
+					Storyboard.TargetName="LeftSlideManagerViewGrid"
+					Storyboard.TargetProperty="Margin">
+					<EasingThicknessKeyFrame
+						KeyTime="0"
+						Value="0 10 0 55" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0 10 0 95" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0 10 0 130" />
+				</ThicknessAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="LeftSlideManagerViewGrid"
+					Completed="ShowLeftSlideManagerView_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.2" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="LeftSlideManagerViewGrid">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="HiddenLeftBottomSlideManagerViewStoryboard0">
+				<ThicknessAnimationUsingKeyFrames
+					Storyboard.TargetName="LeftSlideManagerViewGrid"
+					Storyboard.TargetProperty="Margin">
+					<EasingThicknessKeyFrame
+						KeyTime="0"
+						Value="0 10 0 40" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0 10 0 25" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0 10 0 15" />
+				</ThicknessAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="LeftSlideManagerViewGrid"
+					Completed="HiddenLeftSlideManagerView_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.2" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="LeftSlideManagerViewGrid">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="HiddenLeftBottomSlideManagerViewStoryboard1440">
+				<ThicknessAnimationUsingKeyFrames
+					Storyboard.TargetName="LeftSlideManagerViewGrid"
+					Storyboard.TargetProperty="Margin">
+					<EasingThicknessKeyFrame
+						KeyTime="0"
+						Value="0 10 0 70" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0 10 0 40" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0 10 0 20" />
+				</ThicknessAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="LeftSlideManagerViewGrid"
+					Completed="HiddenLeftSlideManagerView_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.2" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="LeftSlideManagerViewGrid">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="HiddenLeftBottomSlideManagerViewStoryboard3800">
+				<ThicknessAnimationUsingKeyFrames
+					Storyboard.TargetName="LeftSlideManagerViewGrid"
+					Storyboard.TargetProperty="Margin">
+					<EasingThicknessKeyFrame
+						KeyTime="0"
+						Value="0 10 0 130" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0 10 0 95" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0 10 0 55" />
+				</ThicknessAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="LeftSlideManagerViewGrid"
+					Completed="HiddenLeftSlideManagerView_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.2" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="LeftSlideManagerViewGrid">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="ShowRightBottomSlideManagerViewStoryboard0">
+				<ThicknessAnimationUsingKeyFrames
+					Storyboard.TargetName="RightSlideManagerViewGrid"
+					Storyboard.TargetProperty="Margin">
+					<EasingThicknessKeyFrame
+						KeyTime="0"
+						Value="0 10 0 15" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0 10 0 25" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0 10 0 40" />
+				</ThicknessAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="RightSlideManagerViewGrid"
+					Completed="ShowRightSlideManagerView_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.2" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="RightSlideManagerViewGrid">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="ShowRightBottomSlideManagerViewStoryboard1440">
+				<ThicknessAnimationUsingKeyFrames
+					Storyboard.TargetName="RightSlideManagerViewGrid"
+					Storyboard.TargetProperty="Margin">
+					<EasingThicknessKeyFrame
+						KeyTime="0"
+						Value="0 10 0 20" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0 10 0 40" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0 10 0 70" />
+				</ThicknessAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="RightSlideManagerViewGrid"
+					Completed="ShowRightSlideManagerView_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.2" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="RightSlideManagerViewGrid">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="ShowRightBottomSlideManagerViewStoryboard3800">
+				<ThicknessAnimationUsingKeyFrames
+					Storyboard.TargetName="RightSlideManagerViewGrid"
+					Storyboard.TargetProperty="Margin">
+					<EasingThicknessKeyFrame
+						KeyTime="0"
+						Value="0 10 0 55" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0 10 0 95" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0 10 0 130" />
+				</ThicknessAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="RightSlideManagerViewGrid"
+					Completed="ShowRightSlideManagerView_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.2" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="RightSlideManagerViewGrid">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="0" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="HiddenRightBottomSlideManagerViewStoryboard0">
+				<ThicknessAnimationUsingKeyFrames
+					Storyboard.TargetName="RightSlideManagerViewGrid"
+					Storyboard.TargetProperty="Margin">
+					<EasingThicknessKeyFrame
+						KeyTime="0"
+						Value="0 10 0 40" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0 10 0 25" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0 10 0 15" />
+				</ThicknessAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="RightSlideManagerViewGrid"
+					Completed="HiddenRightSlideManagerView_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.2" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="RightSlideManagerViewGrid">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="HiddenRightBottomSlideManagerViewStoryboard1440">
+				<ThicknessAnimationUsingKeyFrames
+					Storyboard.TargetName="RightSlideManagerViewGrid"
+					Storyboard.TargetProperty="Margin">
+					<EasingThicknessKeyFrame
+						KeyTime="0"
+						Value="0 10 0 70" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0 10 0 40" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0 10 0 20" />
+				</ThicknessAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="RightSlideManagerViewGrid"
+					Completed="HiddenRightSlideManagerView_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.2" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="RightSlideManagerViewGrid">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="HiddenRightBottomSlideManagerViewStoryboard3800">
+				<ThicknessAnimationUsingKeyFrames
+					Storyboard.TargetName="RightSlideManagerViewGrid"
+					Storyboard.TargetProperty="Margin">
+					<EasingThicknessKeyFrame
+						KeyTime="0"
+						Value="0 10 0 130" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0 10 0 95" />
+					<EasingThicknessKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0 10 0 55" />
+				</ThicknessAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+					Storyboard.TargetName="RightSlideManagerViewGrid"
+					Completed="HiddenRightSlideManagerView_OnCompleted">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.2" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+					Storyboard.TargetName="RightSlideManagerViewGrid">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="0.1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.4"
+						Value="0" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="ShowLeftCenterButtonGridStoryBoard">
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetName="LeftCenterButtonGrid"
+					Storyboard.TargetProperty="Opacity">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetName="LeftBottomButtonGrid"
+					Storyboard.TargetProperty="Opacity">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="HiddenLeftCenterButtonGridStoryBoard">
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetName="LeftCenterButtonGrid"
+					Storyboard.TargetProperty="Opacity">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:6"
+						Value="1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:7"
+						Value="0.3" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetName="LeftBottomButtonGrid"
+					Storyboard.TargetProperty="Opacity">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:6"
+						Value="1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:7"
+						Value="0.3" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="ShowRightCenterButtonGridStoryBoard">
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetName="RightCenterButtonGrid"
+					Storyboard.TargetProperty="Opacity">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetName="RightBottomButtonGrid"
+					Storyboard.TargetProperty="Opacity">
+					<EasingDoubleKeyFrame
+						KeyTime="0"
+						Value="1" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+			<Storyboard
+				x:Key="HiddenRightCenterButtonGridStoryBoard">
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetName="RightCenterButtonGrid"
+					Storyboard.TargetProperty="Opacity">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:6"
+						Value="1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:7"
+						Value="0.3" />
+				</DoubleAnimationUsingKeyFrames>
+				<DoubleAnimationUsingKeyFrames
+					Storyboard.TargetName="RightBottomButtonGrid"
+					Storyboard.TargetProperty="Opacity">
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:0.2"
+						Value="1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:6"
+						Value="1" />
+					<EasingDoubleKeyFrame
+						KeyTime="0:0:7"
+						Value="0.3" />
+				</DoubleAnimationUsingKeyFrames>
+			</Storyboard>
+		</ResourceDictionary>
+	</FrameworkElement.Resources>
+	<Grid
+		Name="RootGrid"
+		FocusManager.IsFocusScope="True"
+		Margin="6 1 6 6">
+		<Grid.RowDefinitions>
+			<RowDefinition
+				Height="*" />
+			<RowDefinition
+				Height="Auto" />
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+		</Grid.ColumnDefinitions>
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup
+				x:Name="AdaptiveStates">
+				<VisualState
+					x:Name="Adaptive0">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames
+							Storyboard.TargetName="RootGrid"
+							Storyboard.TargetProperty="Margin">
+							<DiscreteObjectKeyFrame
+								KeyTime="0">
+								<ObjectKeyFrame.Value>
+									<Thickness>3 1 3 3</Thickness>
+								</ObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames
+							Storyboard.TargetName="LeftSlideManagerViewGrid"
+							Storyboard.TargetProperty="(FrameworkElement.Width)">
+							<EasingDoubleKeyFrame
+								KeyTime="0"
+								Value="90" />
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames
+							Storyboard.TargetName="LeftSlideManagerViewGrid"
+							Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(TranslateTransform.X)">
+							<EasingDoubleKeyFrame
+								KeyTime="0"
+								Value="40" />
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames
+							Storyboard.TargetName="RightSlideManagerViewGrid"
+							Storyboard.TargetProperty="(FrameworkElement.Width)">
+							<EasingDoubleKeyFrame
+								KeyTime="0"
+								Value="90" />
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames
+							Storyboard.TargetName="RightSlideManagerViewGrid"
+							Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(TranslateTransform.X)">
+							<EasingDoubleKeyFrame
+								KeyTime="0"
+								Value="-40" />
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState
+					x:Name="Adaptive1440" />
+				<VisualState
+					x:Name="Adaptive3800">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames
+							Storyboard.TargetName="RootGrid"
+							Storyboard.TargetProperty="Margin">
+							<DiscreteObjectKeyFrame
+								KeyTime="0">
+								<ObjectKeyFrame.Value>
+									<Thickness>12 1 12 12</Thickness>
+								</ObjectKeyFrame.Value>
+							</DiscreteObjectKeyFrame>
+						</ObjectAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames
+							Storyboard.TargetName="LeftSlideManagerViewGrid"
+							Storyboard.TargetProperty="(FrameworkElement.Width)">
+							<EasingDoubleKeyFrame
+								KeyTime="0"
+								Value="310" />
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames
+							Storyboard.TargetName="LeftSlideManagerViewGrid"
+							Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(TranslateTransform.X)">
+							<EasingDoubleKeyFrame
+								KeyTime="0"
+								Value="110" />
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames
+							Storyboard.TargetName="RightSlideManagerViewGrid"
+							Storyboard.TargetProperty="(FrameworkElement.Width)">
+							<EasingDoubleKeyFrame
+								KeyTime="0"
+								Value="310" />
+						</DoubleAnimationUsingKeyFrames>
+						<DoubleAnimationUsingKeyFrames
+							Storyboard.TargetName="RightSlideManagerViewGrid"
+							Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(TranslateTransform.X)">
+							<EasingDoubleKeyFrame
+								KeyTime="0"
+								Value="-110" />
+						</DoubleAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
+		<i:Interaction.Triggers>
+			<pptService:AdaptiveTrigger
+				MinWindowWidth="0">
+				<ei:GoToStateAction
+					StateName="Adaptive0" />
+			</pptService:AdaptiveTrigger>
+			<pptService:AdaptiveTrigger
+				MinWindowWidth="1440">
+				<ei:GoToStateAction
+					StateName="Adaptive1440" />
+			</pptService:AdaptiveTrigger>
+			<pptService:AdaptiveTrigger
+				MinWindowWidth="3800">
+				<ei:GoToStateAction
+					StateName="Adaptive3800" />
+			</pptService:AdaptiveTrigger>
+		</i:Interaction.Triggers>
+		<Grid
+			Name="LeftCenterButtonGrid"
+			Row="0"
+			RowSpan="2"
+			Column="0"
+			HorizontalAlignment="Left" />
+		<Grid
+			Name="RightCenterButtonGrid"
+			Row="0"
+			RowSpan="2"
+			Column="2"
+			HorizontalAlignment="Right" />
+		<Grid
+			Name="LeftBottomButtonGrid"
+			Row="1"
+			Column="0"
+			HorizontalAlignment="Left" />
+		<Grid
+			Name="RightBottomButtonGrid"
+			Row="1"
+			Column="2"
+			HorizontalAlignment="Right" />
+		<Button
+			Name="LowMaskButton"
+			Grid.Row="0"
+			Grid.Column="0"
+			Grid.RowSpan="2"
+			Grid.ColumnSpan="3"
+			Visibility="Collapsed"
+			Style="{StaticResource NoButtonStyle}"
+			PreviewMouseLeftButtonDown="LowMaskButton_Click" />
+		<Grid
+			Name="BottomCenterButtonGrid"
+			Row="1"
+			Column="0"
+			ColumnSpan="3"
+			HorizontalAlignment="Center"
+			Background="#01FFFFFF"
+			PreviewMouseLeftButtonDown="ToolbarGrid_PreviewMouseLeftButtonDown"
+			LostMouseCapture="ToolbarGrid_LostMouseCapture" />
+		<Button
+			Name="HighMaskButton"
+			Grid.Row="0"
+			Grid.Column="0"
+			Grid.RowSpan="2"
+			Grid.ColumnSpan="3"
+			Visibility="Collapsed"
+			Style="{StaticResource NoButtonStyle}"
+			PreviewMouseLeftButtonDown="HighMaskButton_Click" />
+		<Grid
+			Name="LeftSlideManagerViewGrid"
+			Row="0"
+			Column="0"
+			RowSpan="2"
+			Width="160"
+			Margin="0 10 0 10"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Bottom"
+			RenderTransformOrigin="0.5,1">
+			<UIElement.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform
+						ScaleX="0"
+						ScaleY="0" />
+				</TransformGroup>
+			</UIElement.RenderTransform>
+			<ListBox
+				Name="LeftSlideListBox"
+				ItemsSource="{Binding SlideItems}" />
+		</Grid>
+		<Grid
+			Name="RightSlideManagerViewGrid"
+			Row="0"
+			Column="2"
+			RowSpan="2"
+			Width="160"
+			Margin="0 10 0 10"
+			HorizontalAlignment="Right"
+			VerticalAlignment="Center"
+			RenderTransformOrigin="1,0.5">
+			<UIElement.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform
+						ScaleX="0"
+						ScaleY="0" />
+				</TransformGroup>
+			</UIElement.RenderTransform>
+			<ListBox
+				Name="RightSlideListBox"
+				ItemsSource="{Binding SlideItems}" />
+		</Grid>
+		<Grid
+			Name="QrGrid"
+			Row="0"
+			Column="0"
+			RowSpan="2"
+			ColumnSpan="3"
+			Visibility="Collapsed"
+			Background="#27000000"
+			MouseLeftButtonDown="QrGrid_OnMouseLeftButtonDown">
+			<Border
+				Width="700"
+				Height="700"
+				VerticalAlignment="Center"
+				HorizontalAlignment="Center">
+				<Image
+					Name="QrImage"
+					Width="700"
+					Height="700"
+					Visibility="Collapsed" />
+			</Border>
+		</Grid>
+	</Grid>
+</Window>

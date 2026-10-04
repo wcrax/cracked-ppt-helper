@@ -1,0 +1,66 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>PPTService</RootNamespace>
+    <AssemblyName>PPTService</AssemblyName>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>PPTService.ico</ApplicationIcon>
+    <StartupObject>PPTService.App</StartupObject>
+    <LangVersion>latest</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <NoWarn>$(NoWarn);MSB3277;NU1701</NoWarn>
+    <AutomaticallyUseReferenceAssemblyPackages>false</AutomaticallyUseReferenceAssemblyPackages>
+    <!-- No targeting pack installed: fall back to the installed .NET Framework (GAC) like MSB3644-disabled builds -->
+    <FrameworkPathOverride Condition="'$(FrameworkPathOverride)' == ''">C:\Windows\Microsoft.NET\Framework\v4.0.30319</FrameworkPathOverride>
+    <OutputPath Condition="'$(Configuration)' == 'Debug'">bin\Debug\</OutputPath>
+    <OutputPath Condition="'$(Configuration)' == 'Release'">bin\Release\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Cvte.Mcu">
+      <HintPath>..\..\..\Program Files (x86)\Seewo\PPTService\Main\Cvte.Mcu.dll</HintPath>
+    </Reference>
+    <Reference Include="Cvte.WebService">
+      <HintPath>..\..\..\Program Files (x86)\Seewo\PPTService\Main\Cvte.WebService.dll</HintPath>
+    </Reference>
+    <Reference Include="Cvte.Windows.cc">
+      <HintPath>..\..\..\Program Files (x86)\Seewo\PPTService\Main\Cvte.Windows.cc.dll</HintPath>
+    </Reference>
+    <Reference Include="PPTService.Collection">
+      <HintPath>..\..\..\Program Files (x86)\Seewo\PPTService\Main\PPTService.Collection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Interactivity">
+      <HintPath>..\..\..\Program Files (x86)\Seewo\PPTService\Main\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Interactions">
+      <HintPath>..\..\..\Program Files (x86)\Seewo\PPTService\Main\Microsoft.Expression.Interactions.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v4.0.30319\WPF\WindowsBase.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v4.0.30319\WPF\PresentationCore.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v4.0.30319\WPF\PresentationFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml">
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v4.0.30319\WPF\System.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="obj\**;bin\**;.vs\**" />
+    <Page Remove="obj\**;bin\**;.vs\**" />
+    <None Remove="obj\**;bin\**;.vs\**" />
+  </ItemGroup>
+
+</Project>

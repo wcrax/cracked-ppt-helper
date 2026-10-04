@@ -1,0 +1,583 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<DrawingImage
+		x:Key="ImageSource.Placeholder">
+		<DrawingImage.Drawing>
+			<DrawingGroup>
+				<DrawingGroup.Children>
+					<GeometryDrawing
+						Brush="{x:Null}">
+						<GeometryDrawing.Pen>
+							<Pen
+								Brush="#FFDDDDDD"
+								Thickness="1"
+								StartLineCap="Flat"
+								EndLineCap="Flat"
+								LineJoin="Miter" />
+						</GeometryDrawing.Pen>
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M0,1.99124431C0,0.891510444,0.889892578,0,1.99970728,0L34.0002927,0C35.1047006,0,36,0.899897516,36,1.99124431L36,26.0087557C36,27.1084896,35.1101074,28,34.0002927,28L1.99970728,28C0.895299444,28,0,27.1001025,0,26.0087557L0,1.99124431z M1,2.00329963C1,1.44919255,1.45492426,1,1.99914214,1L34.0008579,1C34.5526688,1,35,1.45127869,35,2.00329963L35,25.9967004C35,26.5508075,34.5450757,27,34.0008579,27L1.99914214,27C1.44733117,27,1,26.5487213,1,25.9967004L1,2.00329963z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FFDDDDDD">
+						<GeometryDrawing.Geometry>
+							<RectangleGeometry
+								RadiusX="2"
+								RadiusY="2"
+								Rect="4,8,12,1" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FFDDDDDD">
+						<GeometryDrawing.Geometry>
+							<RectangleGeometry
+								RadiusX="2"
+								RadiusY="2"
+								Rect="4,13,10,1" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FFDDDDDD">
+						<GeometryDrawing.Geometry>
+							<RectangleGeometry
+								RadiusX="2"
+								RadiusY="2"
+								Rect="4,18,8,1" />
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FFDDDDDD">
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M31,15C31,18.3137085 28.3137085,21 25,21 21.6862915,21 19,18.3137085 19,15 19,11.6862915 21.6862915,9 25,9L25,15 31,15z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+					<GeometryDrawing
+						Brush="#FFDDDDDD">
+						<GeometryDrawing.Geometry>
+							<StreamGeometry>M32,14C32,10.6862915,29.3137085,8,26,8L26,14 32,14z</StreamGeometry>
+						</GeometryDrawing.Geometry>
+					</GeometryDrawing>
+				</DrawingGroup.Children>
+			</DrawingGroup>
+		</DrawingImage.Drawing>
+	</DrawingImage>
+	<Style
+		TargetType="{x:Type ListBox}"
+		x:Key="Style.ListBox0">
+		<Setter
+			Property="ListBox.SelectionMode"
+			Value="Single" />
+		<Setter
+			Property="Background"
+			Value="#01000000" />
+		<Setter
+			Property="ScrollViewer.CanContentScroll"
+			Value="False" />
+		<Setter
+			Property="BorderThickness"
+			Value="0" />
+		<Setter
+			Property="ScrollViewer.HorizontalScrollBarVisibility"
+			Value="Disabled" />
+		<Setter
+			Property="ScrollViewer.VerticalScrollBarVisibility"
+			Value="Hidden" />
+		<Setter
+			Property="FrameworkElement.FocusVisualStyle"
+			Value="{x:Null}" />
+		<Setter
+			Property="ClipToBounds"
+			Value="False" />
+		<Setter
+			Property="ItemContainerStyle"
+			Value="{DynamicResource Style.ListBoxItem0}" />
+		<Setter
+			Property="ItemsSource"
+			Value="{Binding IsAsync=True}" />
+	</Style>
+	<Style
+		TargetType="{x:Type ListBox}"
+		x:Key="Style.ListBox1440">
+		<Setter
+			Property="ListBox.SelectionMode"
+			Value="Single" />
+		<Setter
+			Property="Background"
+			Value="#01000000" />
+		<Setter
+			Property="ScrollViewer.CanContentScroll"
+			Value="False" />
+		<Setter
+			Property="BorderThickness"
+			Value="0" />
+		<Setter
+			Property="ScrollViewer.HorizontalScrollBarVisibility"
+			Value="Disabled" />
+		<Setter
+			Property="ScrollViewer.VerticalScrollBarVisibility"
+			Value="Hidden" />
+		<Setter
+			Property="FrameworkElement.FocusVisualStyle"
+			Value="{x:Null}" />
+		<Setter
+			Property="ClipToBounds"
+			Value="False" />
+		<Setter
+			Property="ItemContainerStyle"
+			Value="{DynamicResource Style.ListBoxItem1440}" />
+		<Setter
+			Property="ItemsSource"
+			Value="{Binding IsAsync=True}" />
+	</Style>
+	<Style
+		TargetType="{x:Type ListBox}"
+		x:Key="Style.ListBox3800">
+		<Setter
+			Property="ListBox.SelectionMode"
+			Value="Single" />
+		<Setter
+			Property="Background"
+			Value="#01000000" />
+		<Setter
+			Property="ScrollViewer.CanContentScroll"
+			Value="False" />
+		<Setter
+			Property="BorderThickness"
+			Value="0" />
+		<Setter
+			Property="ScrollViewer.HorizontalScrollBarVisibility"
+			Value="Disabled" />
+		<Setter
+			Property="ScrollViewer.VerticalScrollBarVisibility"
+			Value="Hidden" />
+		<Setter
+			Property="FrameworkElement.FocusVisualStyle"
+			Value="{x:Null}" />
+		<Setter
+			Property="ClipToBounds"
+			Value="False" />
+		<Setter
+			Property="ItemContainerStyle"
+			Value="{DynamicResource Style.ListBoxItem3800}" />
+		<Setter
+			Property="ItemsSource"
+			Value="{Binding IsAsync=True}" />
+	</Style>
+	<Style
+		TargetType="{x:Type ListBoxItem}"
+		x:Key="Style.ListBoxItem0">
+		<Setter
+			Property="VerticalAlignment"
+			Value="Center" />
+		<Setter
+			Property="HorizontalAlignment"
+			Value="Center" />
+		<Setter
+			Property="FrameworkElement.FocusVisualStyle"
+			Value="{x:Null}" />
+		<Setter
+			Property="UIElement.SnapsToDevicePixels"
+			Value="True" />
+		<Setter
+			Property="FrameworkElement.Tag"
+			Value="{Binding IsPptThumbnail}" />
+		<Setter
+			Property="Template">
+			<Setter.Value>
+				<ControlTemplate
+					TargetType="{x:Type ListBoxItem}">
+					<Grid
+						Name="RootGrid"
+						Margin="0 0 0 10"
+						Width="90"
+						Height="65">
+						<Grid.RowDefinitions>
+							<RowDefinition
+								Height="Auto" />
+							<RowDefinition
+								Height="*" />
+						</Grid.RowDefinitions>
+						<Grid
+							Name="PerchGrid"
+							Row="0"
+							Height="8"
+							Background="#00FFFFFF" />
+						<Grid
+							Name="SlideIndexBackgroundGrid"
+							Row="0"
+							RowSpan="2"
+							Height="13"
+							Width="20"
+							Margin="3 0 0 0"
+							HorizontalAlignment="Left"
+							VerticalAlignment="Top">
+							<Path
+								Name="SlideIndexBackgroundPath"
+								Data="M0,0 L30,0 L40,30 L0,30 L0,0"
+								Stroke="#A0666666"
+								Fill="#FFFFFFFF"
+								Stretch="Fill" />
+						</Grid>
+						<Grid
+							Name="SlideIndexGrid"
+							Row="0"
+							RowSpan="2"
+							Margin="3 2 0 0"
+							Width="15"
+							HorizontalAlignment="Left"
+							VerticalAlignment="Top">
+							<TextBlock
+								Name="SlideTextBlock"
+								FontSize="6"
+								HorizontalAlignment="Center"
+								Text="{Binding Index}" />
+						</Grid>
+						<Border
+							Name="SlideBorder"
+							Grid.Row="1"
+							BorderThickness="1"
+							Margin="3"
+							BorderBrush="#80666666">
+							<Grid
+								Background="#FFFFFFFF">
+								<Image
+									Name="SlideImage"
+									Stretch="Fill"
+									Source="{Binding BitmapImage}" />
+								<Border
+									Name="InnerSlideBorder"
+									BorderThickness="1"
+									BorderBrush="#FFFFFFFF"
+									SnapsToDevicePixels="True" />
+							</Grid>
+						</Border>
+					</Grid>
+					<ControlTemplate.Triggers>
+						<Trigger
+							Property="FrameworkElement.Tag"
+							Value="False">
+							<Setter
+								TargetName="SlideImage"
+								Property="Source"
+								Value="{StaticResource ImageSource.Placeholder}" />
+						</Trigger>
+						<Trigger
+							Property="ListBoxItem.IsSelected"
+							Value="True">
+							<Setter
+								TargetName="SlideBorder"
+								Property="BorderBrush"
+								Value="#FFFF7F50" />
+							<Setter
+								TargetName="SlideBorder"
+								Property="BorderThickness"
+								Value="2" />
+							<Setter
+								TargetName="SlideBorder"
+								Property="Margin"
+								Value="2" />
+							<Setter
+								TargetName="SlideIndexBackgroundGrid"
+								Property="Margin"
+								Value="2 0 0 0" />
+							<Setter
+								TargetName="SlideIndexBackgroundPath"
+								Property="Stroke"
+								Value="#FFFF7F50" />
+							<Setter
+								TargetName="SlideIndexBackgroundPath"
+								Property="Fill"
+								Value="#FFFF7F50" />
+							<Setter
+								TargetName="SlideIndexBackgroundPath"
+								Property="StrokeThickness"
+								Value="2" />
+							<Setter
+								TargetName="SlideTextBlock"
+								Property="Foreground"
+								Value="#FFFFFFFF" />
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	<Style
+		TargetType="{x:Type ListBoxItem}"
+		x:Key="Style.ListBoxItem1440">
+		<Setter
+			Property="VerticalAlignment"
+			Value="Center" />
+		<Setter
+			Property="HorizontalAlignment"
+			Value="Center" />
+		<Setter
+			Property="FrameworkElement.FocusVisualStyle"
+			Value="{x:Null}" />
+		<Setter
+			Property="UIElement.SnapsToDevicePixels"
+			Value="True" />
+		<Setter
+			Property="FrameworkElement.Tag"
+			Value="{Binding IsPptThumbnail}" />
+		<Setter
+			Property="Template">
+			<Setter.Value>
+				<ControlTemplate
+					TargetType="{x:Type ListBoxItem}">
+					<Grid
+						Name="RootGrid"
+						Margin="0 0 0 10"
+						Width="160"
+						Height="110">
+						<Grid.RowDefinitions>
+							<RowDefinition
+								Height="Auto" />
+							<RowDefinition
+								Height="*" />
+						</Grid.RowDefinitions>
+						<Grid
+							Name="PerchGrid"
+							Row="0"
+							Height="15"
+							Background="#00FFFFFF" />
+						<Grid
+							Name="SlideIndexBackgroundGrid"
+							Row="0"
+							RowSpan="2"
+							Height="19"
+							Width="40"
+							Margin="3 0 0 0"
+							HorizontalAlignment="Left"
+							VerticalAlignment="Top">
+							<Path
+								Name="SlideIndexBackgroundPath"
+								Data="M0,0 L30,0 L40,30 L0,30 L0,0"
+								Stroke="#A0666666"
+								Fill="#FFFFFFFF"
+								Stretch="Fill" />
+						</Grid>
+						<Grid
+							Name="SlideIndexGrid"
+							Row="0"
+							RowSpan="2"
+							Margin="3 2 0 0"
+							Width="30"
+							HorizontalAlignment="Left"
+							VerticalAlignment="Top">
+							<TextBlock
+								Name="SlideTextBlock"
+								HorizontalAlignment="Center"
+								Text="{Binding Index}" />
+						</Grid>
+						<Border
+							Name="SlideBorder"
+							Grid.Row="1"
+							BorderThickness="1"
+							Margin="3"
+							BorderBrush="#80666666">
+							<Grid
+								Background="#FFFFFFFF">
+								<Image
+									Name="SlideImage"
+									Stretch="Fill"
+									Source="{Binding BitmapImage}" />
+								<Border
+									Name="InnerSlideBorder"
+									BorderThickness="1"
+									BorderBrush="#FFFFFFFF"
+									SnapsToDevicePixels="True" />
+							</Grid>
+						</Border>
+					</Grid>
+					<ControlTemplate.Triggers>
+						<Trigger
+							Property="FrameworkElement.Tag"
+							Value="False">
+							<Setter
+								TargetName="SlideImage"
+								Property="Source"
+								Value="{StaticResource ImageSource.Placeholder}" />
+						</Trigger>
+						<Trigger
+							Property="ListBoxItem.IsSelected"
+							Value="True">
+							<Setter
+								TargetName="SlideBorder"
+								Property="BorderBrush"
+								Value="#FFFF7F50" />
+							<Setter
+								TargetName="SlideBorder"
+								Property="BorderThickness"
+								Value="2" />
+							<Setter
+								TargetName="SlideBorder"
+								Property="Margin"
+								Value="2" />
+							<Setter
+								TargetName="SlideIndexBackgroundGrid"
+								Property="Margin"
+								Value="2 0 0 0" />
+							<Setter
+								TargetName="SlideIndexBackgroundPath"
+								Property="Stroke"
+								Value="#FFFF7F50" />
+							<Setter
+								TargetName="SlideIndexBackgroundPath"
+								Property="Fill"
+								Value="#FFFF7F50" />
+							<Setter
+								TargetName="SlideIndexBackgroundPath"
+								Property="StrokeThickness"
+								Value="2" />
+							<Setter
+								TargetName="SlideTextBlock"
+								Property="Foreground"
+								Value="#FFFFFFFF" />
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	<Style
+		TargetType="{x:Type ListBoxItem}"
+		x:Key="Style.ListBoxItem3800">
+		<Setter
+			Property="VerticalAlignment"
+			Value="Center" />
+		<Setter
+			Property="HorizontalAlignment"
+			Value="Center" />
+		<Setter
+			Property="FrameworkElement.FocusVisualStyle"
+			Value="{x:Null}" />
+		<Setter
+			Property="UIElement.SnapsToDevicePixels"
+			Value="True" />
+		<Setter
+			Property="FrameworkElement.Tag"
+			Value="{Binding IsPptThumbnail}" />
+		<Setter
+			Property="Template">
+			<Setter.Value>
+				<ControlTemplate
+					TargetType="{x:Type ListBoxItem}">
+					<Grid
+						Name="RootGrid"
+						Margin="0 0 0 10"
+						Width="300"
+						Height="210">
+						<Grid.RowDefinitions>
+							<RowDefinition
+								Height="Auto" />
+							<RowDefinition
+								Height="*" />
+						</Grid.RowDefinitions>
+						<Grid
+							Name="PerchGrid"
+							Row="0"
+							Height="25"
+							Background="#00FFFFFF" />
+						<Grid
+							Name="SlideIndexBackgroundGrid"
+							Row="0"
+							RowSpan="2"
+							Height="29"
+							Width="60"
+							Margin="3 0 0 0"
+							HorizontalAlignment="Left"
+							VerticalAlignment="Top">
+							<Path
+								Name="SlideIndexBackgroundPath"
+								Data="M0,0 L30,0 L40,30 L0,30 L0,0"
+								Stroke="#A0666666"
+								Fill="#FFFFFFFF"
+								Stretch="Fill" />
+						</Grid>
+						<Grid
+							Name="SlideIndexGrid"
+							Row="0"
+							RowSpan="2"
+							Margin="3 1 0 0"
+							Width="45"
+							HorizontalAlignment="Left"
+							VerticalAlignment="Top">
+							<TextBlock
+								Name="SlideTextBlock"
+								FontSize="21"
+								HorizontalAlignment="Center"
+								Text="{Binding Index}" />
+						</Grid>
+						<Border
+							Name="SlideBorder"
+							Grid.Row="1"
+							BorderThickness="1"
+							Margin="3"
+							BorderBrush="#80666666"
+							SnapsToDevicePixels="True">
+							<Grid
+								Background="#FFFFFFFF">
+								<Image
+									Name="SlideImage"
+									Stretch="Fill"
+									Source="{Binding BitmapImage}" />
+								<Border
+									Name="InnerSlideBorder"
+									BorderThickness="1"
+									BorderBrush="#FFFFFFFF"
+									SnapsToDevicePixels="True" />
+							</Grid>
+						</Border>
+					</Grid>
+					<ControlTemplate.Triggers>
+						<Trigger
+							Property="FrameworkElement.Tag"
+							Value="False">
+							<Setter
+								TargetName="SlideImage"
+								Property="Source"
+								Value="{StaticResource ImageSource.Placeholder}" />
+						</Trigger>
+						<Trigger
+							Property="ListBoxItem.IsSelected"
+							Value="True">
+							<Setter
+								TargetName="SlideBorder"
+								Property="BorderBrush"
+								Value="#FFFF7F50" />
+							<Setter
+								TargetName="SlideBorder"
+								Property="BorderThickness"
+								Value="2" />
+							<Setter
+								TargetName="SlideBorder"
+								Property="Margin"
+								Value="2" />
+							<Setter
+								TargetName="SlideIndexBackgroundGrid"
+								Property="Margin"
+								Value="2 0 0 0" />
+							<Setter
+								TargetName="SlideIndexBackgroundPath"
+								Property="Stroke"
+								Value="#FFFF7F50" />
+							<Setter
+								TargetName="SlideIndexBackgroundPath"
+								Property="Fill"
+								Value="#FFFF7F50" />
+							<Setter
+								TargetName="SlideIndexBackgroundPath"
+								Property="StrokeThickness"
+								Value="2" />
+							<Setter
+								TargetName="SlideTextBlock"
+								Property="Foreground"
+								Value="#FFFFFFFF" />
+						</Trigger>
+					</ControlTemplate.Triggers>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+</ResourceDictionary>

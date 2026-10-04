@@ -1,0 +1,15 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Style
+		TargetType="{x:Type Ellipse}"
+		x:Key="ThumbEllipseStyle">
+		<Setter
+			Property="Fill"
+			Value="#FFFFFF" />
+		<Setter
+			Property="Stroke"
+			Value="#AAAAAA" />
+		<Setter
+			Property="UIElement.Effect"
+			Value="{x:Null}" />
+	</Style>
+</ResourceDictionary>
